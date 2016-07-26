@@ -1,0 +1,345 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,1,0,1
+ PRODUCTVERSION 1,1,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "斗地主游戏"
+            VALUE "FileVersion", "1.1.0.1"
+            VALUE "InternalName", "ddzSrv.dll"
+            VALUE "OriginalFilename", "ddzSrv.dll"
+            VALUE "ProductName", "斗地主游戏"
+            VALUE "ProductVersion", "1.1.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLIENT_LIST         ICON                    "RES\\CLIENT_LIST.ico"
+IDI_CLIENT_ROOM         ICON                    "res\\CLIENT_ROOM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_THING_MESSAGE DIALOGEX 0, 0, 198, 83
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,38,66,38,15
+    PUSHBUTTON      "",IDCANCEL,113,66,38,15
+    EDITTEXT        IDC_LEAVE_MSG,12,40,169,18,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "玩家名字",IDC_LEFT_USER,14,28,167,8,0,WS_EX_TRANSPARENT
+END
+
+IDD_THING DIALOGEX 0, 0, 200, 82
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_THING,12,28,178,13,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "",IDOK,41,59,38,15
+    PUSHBUTTON      "",IDCANCEL,113,60,38,15
+END
+
+IDD_GAME_SET DIALOGEX 0, 0, 194, 117
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "声音效果",IDC_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,24,48,10
+    CONTROL         "允许别人旁观我的游戏",IDC_WATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,42,96,10
+    CONTROL         "显示用户进出消息",IDC_USER_MESSAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,14,59,80,10
+    CONTROL         "顺时针出牌",IDC_RIGHT_POWER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,14,69,56,10
+    DEFPUSHBUTTON   "",1,25,79,49,16
+    PUSHBUTTON      "",2,104,78,49,16
+END
+
+IDD_STOP DIALOGEX 0, 0, 186, 66
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "提前结束"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,27,45,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,45,50,14
+END
+
+IDD_STOP_MESSAGE DIALOGEX 0, 0, 186, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对家请求提前结束"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "同意",IDOK,34,52,46,15
+    PUSHBUTTON      "不同意",IDCANCEL,101,52,46,15
+END
+
+IDD_GAME_END DIALOGEX 0, 0, 260, 124
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_POPUP
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_DISPLAY_TALK DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_GAME_SET1 DIALOGEX 0, 0, 194, 117
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,16,84,49,16
+    PUSHBUTTON      "",IDCANCEL,87,82,49,16
+    CONTROL         "声音效果",IDC_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,23,48,10
+    CONTROL         "允许别人旁观我的游戏",IDC_WATCH,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,43,96,10
+    CONTROL         "显示用户进出消息",IDC_USER_MESSAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,62,80,10
+    CONTROL         "顺时针出牌",IDC_RIGHT_POWER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,21,70,56,10
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 316, 183
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,205,162,50,14
+    PUSHBUTTON      "取消",IDCANCEL,259,162,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SET_PLAY DLGINIT
+BEGIN
+    IDC_FOLLOW, 0x403, 2, 0
+0x0032, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0033, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0034, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0035, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0036, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0037, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0038, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0039, 
+    IDC_FOLLOW, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_FOLLOW, 0x403, 2, 0
+0x004a, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0051, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x004b, 
+    IDC_FOLLOW, 0x403, 2, 0
+0x0041, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0032, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0033, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0034, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0035, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0036, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0037, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0038, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0039, 
+    IDC_POINT_500, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_POINT_500, 0x403, 2, 0
+0x004a, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0051, 
+    IDC_POINT_500, 0x403, 2, 0
+0x004b, 
+    IDC_POINT_500, 0x403, 2, 0
+0x0041, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\UpGrade.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_THING_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_THING, DIALOG
+    BEGIN
+        RIGHTMARGIN, 199
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_STOP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_STOP_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DISPLAY_TALK, DIALOG
+    BEGIN
+    END
+
+    IDD_GAME_SET1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

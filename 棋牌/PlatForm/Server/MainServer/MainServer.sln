@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZServer", "MainServer.vcproj", "{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BCS", "..\CenterServer\CenterServer.vcproj", "{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "子分布服务控制", "..\控制.2003\AFCLoader.vcproj", "{7E0C4B1C-9897-499C-918F-47DB1ABF3969}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		新手方案|Win32 = 新手方案|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.Debug|Win32.ActiveCfg = Debug|Win32
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.Debug|Win32.Build.0 = Debug|Win32
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.Release|Win32.ActiveCfg = Release|Win32
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.Release|Win32.Build.0 = Release|Win32
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.新手方案|Win32.ActiveCfg = Release|Win32
+		{094EB617-6A9D-4CB4-B225-3D8FE3FE8EE3}.新手方案|Win32.Build.0 = Release|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.Debug|Win32.Build.0 = Debug|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.Release|Win32.ActiveCfg = Release|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.Release|Win32.Build.0 = Release|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.新手方案|Win32.ActiveCfg = Release|Win32
+		{82BDFD54-A07D-4CBF-B78D-B92C2A2665CE}.新手方案|Win32.Build.0 = Release|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.Debug|Win32.Build.0 = Debug|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.Release|Win32.ActiveCfg = Release|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.Release|Win32.Build.0 = Release|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.新手方案|Win32.ActiveCfg = 新手方案|Win32
+		{7E0C4B1C-9897-499C-918F-47DB1ABF3969}.新手方案|Win32.Build.0 = 新手方案|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

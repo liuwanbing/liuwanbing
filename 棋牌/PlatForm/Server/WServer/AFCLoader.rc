@@ -1,0 +1,471 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\AFCLoader.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\AFCLoader.ico"
+IDI_START               ICON                    "res\\START.ico"
+IDI_STOP                ICON                    "res\\STOP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "显示控制界面(&S)...",               IDM_SHOW_FACE
+        MENUITEM "登陆服务系统(&O)...",               IDM_LOGON_SYSTEM
+        MENUITEM "锁定服务系统(&L)",                  IDM_LOCK_SYSTEM
+        MENUITEM SEPARATOR
+        MENUITEM "退出系统(&X)",                    ID_APP_EXIT
+    END
+    POPUP "内部使用命令"
+    BEGIN
+        MENUITEM "获取客户端主框架信息",                  IDM_GET_ROOM_LIST
+    END
+END
+
+IDR_COMMAND MENU
+BEGIN
+    POPUP "内部使用命令"
+    BEGIN
+        MENUITEM "获取客户端主框架信息",                  IDM_GET_ROOM_LIST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "深圳市红鸟网络科技有限公司"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "LegalCopyright", "深圳市红鸟网络科技有限公司 (C)  保留所有权利。"
+            VALUE "ProductName", "GServer.exe"
+            VALUE "ProductVersion", "1.0.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\AFCLoader.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LOGON DIALOGEX 0, 0, 187, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "服务控制系统登录："
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_NAME,94,9,75,100,CBS_DROPDOWN | CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_PASS,94,29,75,13,ES_PASSWORD | ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "确定",IDOK,12,59,47,15
+    PUSHBUTTON      "取消",IDCANCEL,70,59,47,15
+    PUSHBUTTON      "系统设置",IDC_SETTING,128,59,47,15
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,6,51,174,1
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,6,81,174,1
+    ICON            IDI_START,-1,13,15,20,20
+    LTEXT           "用户号码：",-1,49,12,41,8
+    LTEXT           "用户口令：",-1,49,32,41,8
+END
+
+IDD_ACCESS_SET DIALOGEX 0, 0, 222, 77
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOPMOST
+CAPTION "系统授权设置："
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_ACCESS_NUM,71,13,133,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_LOGIN_ADDR,71,32,133,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    DEFPUSHBUTTON   "确定",IDOK,44,56,50,15
+    PUSHBUTTON      "取消",IDCANCEL,126,56,50,15
+    LTEXT           "授权序列号：",IDC_STATIC,18,16,49,8
+    LTEXT           "登陆地址：",IDC_STATIC,26,34,41,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,7,208,44
+END
+
+IDD_SERVICE_CONTROL DIALOGEX 0, 0, 541, 371
+STYLE DS_SETFONT | DS_MODALFRAME | DS_3DLOOK | WS_CHILD
+EXSTYLE WS_EX_STATICEDGE
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "建立组件",IDC_SET_COM,395,29,50,14
+    PUSHBUTTON      "更新组件",IDC_UPDATE_COM,452,78,50,14
+    PUSHBUTTON      "安装组件库",IDC_SETUP,396,52,50,14,WS_DISABLED
+    PUSHBUTTON      "启动房间",IDC_START,397,204,50,14,BS_BOTTOM
+    PUSHBUTTON      "停止房间",IDC_STOP,397,223,50,14,BS_BOTTOM
+    PUSHBUTTON      "全部启动",IDC_START_ALL,397,242,50,14,BS_BOTTOM
+    PUSHBUTTON      "全部停止",IDC_STOP_ALL,397,261,50,14,BS_BOTTOM
+    PUSHBUTTON      "删除房间",IDC_DELETE,397,280,50,14,BS_BOTTOM
+    PUSHBUTTON      "增加房间",IDC_CHANGE,397,299,50,14,BS_BOTTOM | WS_DISABLED
+    PUSHBUTTON      "修改房间",IDC_INFO,397,318,50,14,BS_BOTTOM | WS_DISABLED
+    PUSHBUTTON      "管理子实例",IDC_MANAGE,397,337,50,14,BS_BOTTOM | WS_DISABLED
+    CONTROL         "",IDC_INSTANLL_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,14,26,371,98,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_START_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,163,377,188,WS_EX_CLIENTEDGE
+    GROUPBOX        "已运行的组件子实例列表：",IDC_START_FRAME,7,149,130,13
+    GROUPBOX        "系统组件群：",IDC_INSTANLLED_FRAME,7,15,527,120
+    PUSHBUTTON      "刷新组件",IDC_RE_LOAD,397,102,50,14
+    PUSHBUTTON      "清除组件",IDC_REMOVE,449,28,50,14
+    PUSHBUTTON      "删除组件库",IDC_DELDLL,451,52,50,14,WS_DISABLED
+    PUSHBUTTON      "修改组件",IDC_MOTIF,395,77,50,14
+    PUSHBUTTON      "刷新列表",IDC_RELOAD_ROOMLIST,453,337,50,14,BS_BOTTOM
+END
+
+IDD_DLL_SET DIALOGEX 0, 0, 353, 211
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "游戏房间参数设置："
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_SET_COM,284,17,51,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    COMBOBOX        IDC_GAME_TYPE,284,48,51,72,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_SOCKET_PORT,61,37,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ROOM_ID,61,17,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_DESK_COUNT,61,57,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_BASE_POINT,174,17,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_LESS_POINT,174,37,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_MAX_CONNECT,174,57,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ROOM_NAME,61,79,164,12,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_GAME_SQL_IP,"SysIPAddress32",WS_TABSTOP,88,115,73,11,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_USER_SQL_IP,"SysIPAddress32",WS_TABSTOP,88,129,73,11,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_NATIVE_SQL_IP,"SysIPAddress32",WS_TABSTOP,88,143,73,11,WS_EX_CLIENTEDGE
+    EDITTEXT        IDC_ROOM_NOTE,65,167,208,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,78,191,49,14
+    PUSHBUTTON      "取消",IDCANCEL,169,191,49,14
+    GROUPBOX        "常规信息设置：",IDC_STATIC,7,7,339,94
+    LTEXT           "游戏类型：",IDC_STATIC,238,19,40,12
+    RTEXT           "监听端口：",IDC_STATIC,15,40,43,12
+    RTEXT           "桌子数目：",IDC_STATIC,15,61,43,12
+    LTEXT           "最大人数：",IDC_STATIC,130,61,42,12
+    LTEXT           "基础分数：",IDC_STATIC,130,19,40,12
+    LTEXT           "最少分数：",IDC_STATIC,130,40,41,12
+    RTEXT           "房间 ID：",IDC_STATIC,15,19,43,12
+    RTEXT           "房间名字：",IDC_STATIC,15,82,43,12
+    LTEXT           "中心数据库 IP：",IDC_STATIC,21,117,61,8
+    LTEXT           "登陆数据库 IP：",IDC_STATIC,21,132,61,8
+    LTEXT           "本地数据库 IP：",IDC_STATIC,21,146,61,8
+    LTEXT           "备注信息：",IDC_STATIC,19,169,41,8
+    GROUPBOX        "数据库 IP 设置：",IDC_STATIC,7,103,339,59
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,20,183,254,1
+    ICON            IDR_MAINFRAME,IDC_STATIC,301,173,21,21
+    LTEXT           "挂接类型：",IDC_STATIC,237,50,43,12
+    LTEXT           "房间规则：",IDC_STATIC,177,117,41,8
+    CONTROL         "会员房间",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,116,48,10
+    CONTROL         "地址限制",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,116,48,10
+    CONTROL         "允许旁观",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,126,48,10
+    CONTROL         "不许旁观",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,126,48,10
+    CONTROL         "自动坐下",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,136,48,10
+    CONTROL         "限制座位",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,136,48,10
+    CONTROL         "限制同IP",IDC_CHECK8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,224,146,48,10
+    CONTROL         "记录游戏",IDC_CHECK9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,284,146,48,10
+    LTEXT           "挂接序号：",IDC_STATIC,238,81,43,12
+    EDITTEXT        IDC_ROOM_NUMBER,284,79,51,12,ES_AUTOHSCROLL | ES_NUMBER,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 194, 162
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "配制"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,33,141,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,141,50,14
+    LTEXT           "服务端口",IDC_STATIC,25,9,33,8
+    EDITTEXT        IDC_EDIT1,103,7,40,12,ES_AUTOHSCROLL
+    LTEXT           "第二端口",IDC_STATIC,25,24,33,8
+    CONTROL         "允许多线程",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,26,37,56,10
+    EDITTEXT        IDC_EDIT2,103,21,40,12,ES_AUTOHSCROLL
+    LTEXT           "游戏名称",IDC_STATIC,26,53,33,8
+    EDITTEXT        IDC_EDIT3,104,51,40,12,ES_AUTOHSCROLL
+    LTEXT           "大厅名字",IDC_STATIC,26,67,33,8
+    EDITTEXT        IDC_EDIT4,104,65,40,12,ES_AUTOHSCROLL
+    LTEXT           "游戏规则号",IDC_STATIC,27,82,41,8
+    EDITTEXT        IDC_EDIT5,104,79,40,12,ES_AUTOHSCROLL
+    LTEXT           "允许断线次数",IDC_STATIC,27,95,49,8
+    EDITTEXT        IDC_EDIT6,104,107,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,104,93,40,12,ES_AUTOHSCROLL
+    LTEXT           "采用动态获取模板：",IDC_STATIC,27,109,73,8
+    LTEXT           "大厅人数：",IDC_STATIC,27,125,41,8
+    EDITTEXT        IDC_RE_LOAD,103,121,40,12,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG1 DIALOGEX 0, 0, 211, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务器启动"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,154,68,50,14
+    PUSHBUTTON      "启动",IDC_BUTTON1,154,7,50,14
+    EDITTEXT        IDC_EDIT1,54,7,89,14,ES_AUTOHSCROLL
+    LTEXT           "服务IP",IDC_STATIC,19,9,27,8
+    LTEXT           "服务SN",IDC_STATIC,20,28,27,8
+    EDITTEXT        IDC_EDIT2,54,27,88,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "检测",IDC_BUTTON2,155,27,50,14
+    PUSHBUTTON      "配制",IDC_BUTTON3,7,47,50,14
+    PUSHBUTTON      "规则",IDC_BUTTON4,79,47,50,14
+    PUSHBUTTON      "填加",IDC_BUTTON5,154,47,50,14
+    PUSHBUTTON      "删除",IDC_BUTTON6,7,68,50,14
+    PUSHBUTTON      "修改",IDC_BUTTON7,79,69,50,14
+END
+
+IDD_SETGAME_DIALOG DIALOGEX 0, 0, 332, 217
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "建立游戏"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,271,12,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,271,39,50,14
+    RTEXT           "组件ID (ServerInfoID)",IDC_STATIC,19,14,88,8
+    RTEXT           "名字ID (NameID)",IDC_STATIC,19,33,88,8
+    RTEXT           "游戏人数 (DeskPeople)",IDC_STATIC,19,52,88,8
+    RTEXT           "支持类型(SupportType)",IDC_STATIC,19,71,88,8
+    RTEXT           "版本号码 (ServiceVer)",IDC_STATIC,19,90,88,8
+    RTEXT           "游戏名字 (GameName)",IDC_STATIC,19,109,88,8
+    RTEXT           "游戏桌DB表 (GameTable)",IDC_STATIC,19,128,88,8
+    RTEXT           "DLL表名 (DLLFileName)",IDC_STATIC,19,147,88,8
+    RTEXT           "开发者 (Writer)",IDC_STATIC,19,166,88,8
+    RTEXT           "备注 (DllNote)",IDC_STATIC,19,185,88,8
+    EDITTEXT        IDC_EDIT_SIID,130,14,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_NID,130,33,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SV,130,90,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GN,130,109,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GT,130,128,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DLLNAME,130,147,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_W,130,166,88,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_DLLNOTE,130,185,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_DP,130,52,88,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ST,129,71,88,12,ES_AUTOHSCROLL
+END
+
+IDD_REGDLG DIALOGEX 0, 0, 186, 80
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "注册码输入"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_REGCODE,7,34,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,7,58,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,58,50,14
+    LTEXT           "请输入注册码：",IDC_STATIC,7,18,116,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ACCESS_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_SERVICE_CONTROL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 534
+        TOPMARGIN, 15
+        BOTTOMMARGIN, 364
+    END
+
+    IDD_DLL_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 346
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 204
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_SETGAME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_REGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DLL_SET DLGINIT
+BEGIN
+    IDC_SET_COM, 0x403, 7, 0
+0xf0bd, 0xd2b1, 0xe0c0, "\000" 
+    IDC_SET_COM, 0x403, 7, 0
+0xcbc6, 0xcbbf, 0xe0c0, "\000" 
+    IDC_SET_COM, 0x403, 5, 0
+0xe5c6, 0xe0c0, "\000" 
+    IDC_SET_COM, 0x403, 7, 0
+0xd4b6, 0xbdd5, 0xe0c0, "\000" 
+    IDC_SET_COM, 0x403, 7, 0
+0xc8b1, 0xfcc8, 0xe0c0, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "GServer"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "AFCLoader"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\AFCLoader.rc2"  // 非 Microsoft Visual C++ 编辑资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

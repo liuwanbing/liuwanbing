@@ -1,0 +1,6 @@
+; AfcSocket.def : Declares the module parameters for the DLL.
+
+LIBRARY      "AfcSocket"
+
+EXPORTS
+    ; Explicit exports can go here

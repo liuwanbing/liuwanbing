@@ -1,0 +1,4 @@
+#define VER_MAIN 0
+#define VER_MIDDLE 0
+#define VER_RESVERSE 860
+#define VER_BUILDTIME "20141229160553"

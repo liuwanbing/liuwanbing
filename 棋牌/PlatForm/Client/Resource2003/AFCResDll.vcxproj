@@ -1,0 +1,505 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="无技术支持(资源压缩)|Win32">
+      <Configuration>无技术支持(资源压缩)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="无技术支持|Win32">
+      <Configuration>无技术支持</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="硬件加速|Win32">
+      <Configuration>硬件加速</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>系统资源库</ProjectName>
+    <ProjectGuid>{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}</ProjectGuid>
+    <RootNamespace>BZW系统资源库</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\运行\客户端\debug\BZW_Res.dll</OutputFile>
+      <ModuleDefinitionFile>.\AFCResDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\..\运行\lib\debug\BZW_RES.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4005;4018;4800;4244;4101;4010;4267;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\run\Client\release\HN_SYSR.dll</OutputFile>
+      <ModuleDefinitionFile>.\AFCResDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\sdk\lib\Client\HN_SYSR.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\run\Client\release\BZW_Res.dll</OutputFile>
+      <ModuleDefinitionFile>.\AFCResDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\sdk\lib\Client\BZW_RES.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapExports>true</MapExports>
+      <AssemblyDebug>true</AssemblyDebug>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\run\Client\release\BZW_Res.dll</OutputFile>
+      <ModuleDefinitionFile>.\AFCResDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\sdk\lib\Client\BZW_RES.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <OutputFile>..\..\..\run\Client\release\BZW_Res.dll</OutputFile>
+      <ModuleDefinitionFile>.\AFCResDll.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\..\sdk\lib\Client\BZW_RES.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AFCResDll.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AFCResDll.def" />
+    <None Include="res\AFCResDll.rc2" />
+    <None Include="res\Logo\ANSON_LOGO.bmp" />
+    <None Include="res\Ep_001.bmp" />
+    <None Include="res\Ep_res\Ep_001.bmp" />
+    <None Include="Res\EP_RES\EP_001.gif" />
+    <None Include="res\Ep_res\Ep_002.bmp" />
+    <None Include="res\Ep_002.bmp" />
+    <None Include="res\Ep_003.bmp" />
+    <None Include="res\Ep_res\Ep_003.bmp" />
+    <None Include="res\Ep_res\Ep_004.bmp" />
+    <None Include="res\Ep_004.bmp" />
+    <None Include="res\Ep_res\Ep_005.bmp" />
+    <None Include="res\Ep_005.bmp" />
+    <None Include="res\Ep_006.bmp" />
+    <None Include="res\Ep_res\Ep_006.bmp" />
+    <None Include="res\Ep_007.bmp" />
+    <None Include="res\Ep_res\Ep_007.bmp" />
+    <None Include="res\Ep_res\Ep_008.bmp" />
+    <None Include="res\Ep_008.bmp" />
+    <None Include="res\Ep_009.bmp" />
+    <None Include="res\Ep_res\Ep_009.bmp" />
+    <None Include="res\Ep_res\Ep_010.bmp" />
+    <None Include="res\Ep_010.bmp" />
+    <None Include="res\Ep_res\Ep_011.bmp" />
+    <None Include="res\Ep_011.bmp" />
+    <None Include="res\Ep_012.bmp" />
+    <None Include="res\Ep_res\Ep_012.bmp" />
+    <None Include="res\Ep_013.bmp" />
+    <None Include="res\Ep_res\Ep_013.bmp" />
+    <None Include="res\Ep_res\Ep_014.bmp" />
+    <None Include="res\Ep_014.bmp" />
+    <None Include="res\Ep_015.bmp" />
+    <None Include="res\Ep_res\Ep_015.bmp" />
+    <None Include="res\Ep_res\Ep_016.bmp" />
+    <None Include="res\Ep_016.bmp" />
+    <None Include="res\Ep_017.bmp" />
+    <None Include="res\Ep_res\Ep_017.bmp" />
+    <None Include="res\Ep_res\Ep_018.bmp" />
+    <None Include="res\Ep_018.bmp" />
+    <None Include="res\Ep_res\EP_019.bmp" />
+    <None Include="res\EP_019.bmp" />
+    <None Include="res\Ep_020.bmp" />
+    <None Include="res\Ep_res\Ep_020.bmp" />
+    <None Include="res\Ep_res\Ep_021.bmp" />
+    <None Include="res\Ep_021.bmp" />
+    <None Include="res\Ep_022.bmp" />
+    <None Include="res\Ep_res\Ep_022.bmp" />
+    <None Include="res\Ep_023.bmp" />
+    <None Include="res\Ep_res\Ep_023.bmp" />
+    <None Include="res\Ep_024.bmp" />
+    <None Include="res\Ep_res\Ep_024.bmp" />
+    <None Include="res\Ep_025.bmp" />
+    <None Include="res\Ep_res\Ep_025.bmp" />
+    <None Include="res\Ep_026.bmp" />
+    <None Include="res\Ep_res\Ep_026.bmp" />
+    <None Include="res\Ep_res\Ep_027.bmp" />
+    <None Include="res\Ep_027.bmp" />
+    <None Include="res\Ep_res\Ep_028.bmp" />
+    <None Include="res\Ep_028.bmp" />
+    <None Include="res\Ep_res\Ep_029.bmp" />
+    <None Include="res\Ep_029.bmp" />
+    <None Include="res\Ep_res\Ep_030.bmp" />
+    <None Include="res\Ep_030.bmp" />
+    <None Include="res\Ep_res\Ep_031.bmp" />
+    <None Include="res\Ep_031.bmp" />
+    <None Include="res\Ep_res\Ep_032.bmp" />
+    <None Include="res\Ep_032.bmp" />
+    <None Include="res\Ep_res\Ep_033.bmp" />
+    <None Include="res\Ep_033.bmp" />
+    <None Include="res\Ep_034.bmp" />
+    <None Include="res\Ep_res\Ep_034.bmp" />
+    <None Include="res\Ep_035.bmp" />
+    <None Include="res\Ep_res\Ep_035.bmp" />
+    <None Include="res\Ep_res\Ep_036.bmp" />
+    <None Include="res\Ep_036.bmp" />
+    <None Include="res\Ep_037.bmp" />
+    <None Include="res\Ep_res\Ep_037.bmp" />
+    <None Include="res\Ep_res\Ep_038.bmp" />
+    <None Include="res\Ep_038.bmp" />
+    <None Include="res\Ep_039.bmp" />
+    <None Include="res\Ep_res\Ep_039.bmp" />
+    <None Include="res\Ep_res\Ep_040.bmp" />
+    <None Include="res\EP_040.bmp" />
+    <None Include="res\Ep_res\Ep_041.bmp" />
+    <None Include="res\Ep_041.bmp" />
+    <None Include="res\Ep_042.bmp" />
+    <None Include="res\Ep_res\Ep_042.bmp" />
+    <None Include="res\Ep_043.bmp" />
+    <None Include="res\Ep_res\Ep_043.bmp" />
+    <None Include="res\Ep_044.bmp" />
+    <None Include="res\Ep_res\Ep_044.bmp" />
+    <None Include="res\Ep_045.bmp" />
+    <None Include="res\Ep_res\Ep_045.bmp" />
+    <None Include="res\Ep_res\Ep_046.bmp" />
+    <None Include="res\Ep_046.bmp" />
+    <None Include="res\Ep_res\Ep_047.bmp" />
+    <None Include="res\Ep_047.bmp" />
+    <None Include="res\Ep_048.bmp" />
+    <None Include="res\Ep_res\Ep_048.bmp" />
+    <None Include="res\Ep_049.bmp" />
+    <None Include="res\Ep_res\Ep_049.bmp" />
+    <None Include="res\Ep_050.bmp" />
+    <None Include="res\Ep_res\Ep_050.bmp" />
+    <None Include="res\Ep_res\Ep_051.bmp" />
+    <None Include="res\Ep_051.bmp" />
+    <None Include="res\Ep_052.bmp" />
+    <None Include="res\Ep_res\Ep_052.bmp" />
+    <None Include="res\Ep_053.bmp" />
+    <None Include="res\Ep_res\Ep_053.bmp" />
+    <None Include="res\Ep_res\Ep_054.bmp" />
+    <None Include="res\Ep_054.bmp" />
+    <None Include="res\Ep_res\Ep_055.bmp" />
+    <None Include="res\Ep_055.bmp" />
+    <None Include="res\Ep_res\Ep_056.bmp" />
+    <None Include="res\Ep_056.bmp" />
+    <None Include="res\Ep_res\Ep_057.bmp" />
+    <None Include="res\Ep_057.bmp" />
+    <None Include="res\EP_058.bmp" />
+    <None Include="res\Ep_res\Ep_058.bmp" />
+    <None Include="res\Ep_059.bmp" />
+    <None Include="res\Ep_res\Ep_059.bmp" />
+    <None Include="res\Ep_060.bmp" />
+    <None Include="res\Ep_res\Ep_060.bmp" />
+    <None Include="res\EP_061.bmp" />
+    <None Include="res\Ep_res\Ep_061.bmp" />
+    <None Include="res\Ep_062.bmp" />
+    <None Include="res\Ep_res\Ep_062.bmp" />
+    <None Include="res\Ep_063.bmp" />
+    <None Include="res\Ep_res\Ep_063.bmp" />
+    <None Include="res\Ep_064.bmp" />
+    <None Include="res\Ep_res\Ep_064.bmp" />
+    <None Include="res\Ep_res\Ep_065.bmp" />
+    <None Include="res\Ep_065.bmp" />
+    <None Include="res\Ep_res\Ep_066.bmp" />
+    <None Include="res\Ep_066.bmp" />
+    <None Include="res\Ep_067.bmp" />
+    <None Include="res\Ep_res\Ep_067.bmp" />
+    <None Include="res\Ep_068.bmp" />
+    <None Include="res\Ep_res\Ep_068.bmp" />
+    <None Include="res\Ep_res\Ep_069.bmp" />
+    <None Include="res\Ep_069.bmp" />
+    <None Include="res\Ep_res\Ep_070.bmp" />
+    <None Include="res\Ep_070.bmp" />
+    <None Include="res\Ep_071.bmp" />
+    <None Include="res\Ep_res\Ep_071.bmp" />
+    <None Include="res\Ep_res\Ep_072.bmp" />
+    <None Include="res\Ep_072.bmp" />
+    <None Include="res\Ep_res\Ep_073.bmp" />
+    <None Include="res\Ep_073.bmp" />
+    <None Include="res\Ep_res\Ep_074.bmp" />
+    <None Include="res\Ep_074.bmp" />
+    <None Include="res\Ep_075.bmp" />
+    <None Include="res\Ep_res\Ep_075.bmp" />
+    <None Include="res\Ep_076.bmp" />
+    <None Include="res\Ep_res\Ep_076.bmp" />
+    <None Include="res\Ep_077.bmp" />
+    <None Include="res\Ep_res\Ep_077.bmp" />
+    <None Include="res\Ep_res\Ep_078.bmp" />
+    <None Include="res\Ep_078.bmp" />
+    <None Include="res\Ep_res\Ep_079.bmp" />
+    <None Include="res\Ep_079.bmp" />
+    <None Include="res\Ep_res\Ep_080.bmp" />
+    <None Include="res\Ep_080.bmp" />
+    <None Include="Res\desk\G01.bmp" />
+    <None Include="Res\desk\G02.bmp" />
+    <None Include="Res\desk\G03.bmp" />
+    <None Include="Res\desk\G04.bmp" />
+    <None Include="Res\desk\G05.bmp" />
+    <None Include="Res\desk\G06.bmp" />
+    <None Include="Res\desk\G07.bmp" />
+    <None Include="Res\desk\G08.bmp" />
+    <None Include="Res\desk\G09.bmp" />
+    <None Include="Res\desk\G10.bmp" />
+    <None Include="Res\Logo\logo_110.bmp" />
+    <None Include="Res\Logo\logo_111.bmp" />
+    <None Include="Res\Logo\logo_112.bmp" />
+    <None Include="Res\Logo\logo_113.bmp" />
+    <None Include="Res\Logo\logo_114.bmp" />
+    <None Include="Res\Logo\logo_115.bmp" />
+    <None Include="Res\Logo\logo_116.bmp" />
+    <None Include="Res\Logo\logo_117.bmp" />
+    <None Include="Res\Logo\logo_118.bmp" />
+    <None Include="Res\Logo\logo_119.bmp" />
+    <None Include="Res\Logo\logo_120.bmp" />
+    <None Include="Res\Logo\logo_121.bmp" />
+    <None Include="Res\Logo\logo_122.bmp" />
+    <None Include="Res\Logo\logo_123.bmp" />
+    <None Include="Res\Logo\logo_124.bmp" />
+    <None Include="Res\Logo\logo_125.bmp" />
+    <None Include="Res\Logo\logo_126.bmp" />
+    <None Include="Res\Logo\logo_127.bmp" />
+    <None Include="Res\Logo\logo_128.bmp" />
+    <None Include="Res\Logo\logo_129.bmp" />
+    <None Include="Res\Logo\logo_130.bmp" />
+    <None Include="Res\Logo\logo_131.bmp" />
+    <None Include="Res\Logo\logo_132.bmp" />
+    <None Include="Res\Logo\logo_133.bmp" />
+    <None Include="Res\Logo\logo_134.bmp" />
+    <None Include="Res\Logo\logo_135.bmp" />
+    <None Include="Res\Logo\logo_136.bmp" />
+    <None Include="Res\Logo\logo_137.bmp" />
+    <None Include="Res\Logo\logo_138.bmp" />
+    <None Include="Res\Logo\logo_139.bmp" />
+    <None Include="Res\Logo\logo_140.bmp" />
+    <None Include="Res\Logo\logo_141.bmp" />
+    <None Include="Res\Logo\logo_142.bmp" />
+    <None Include="res\Logo\LOST_LOGO.bmp" />
+    <None Include="res\Logo\MATCH.bmp" />
+    <None Include="Res\Logo\PP_0.bmp" />
+    <None Include="Res\Logo\PP_1.bmp" />
+    <None Include="Res\Logo\PP_2.bmp" />
+    <None Include="Res\Logo\PP_3.bmp" />
+    <None Include="Res\Logo\PP_4.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AFCResDll.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

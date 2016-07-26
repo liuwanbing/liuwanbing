@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hge", "hge.vcproj", "{2B30C9BC-C496-44BB-AD0E-20EF3ABBDB45}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hgehelp", "..\helpers\hgehelp.vcproj", "{8B2E97B8-C0CC-4513-AB41-3EC871F1898A}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{2B30C9BC-C496-44BB-AD0E-20EF3ABBDB45}.Debug.ActiveCfg = Debug|Win32
+		{2B30C9BC-C496-44BB-AD0E-20EF3ABBDB45}.Debug.Build.0 = Debug|Win32
+		{2B30C9BC-C496-44BB-AD0E-20EF3ABBDB45}.Release.ActiveCfg = Release|Win32
+		{2B30C9BC-C496-44BB-AD0E-20EF3ABBDB45}.Release.Build.0 = Release|Win32
+		{8B2E97B8-C0CC-4513-AB41-3EC871F1898A}.Debug.ActiveCfg = Debug|Win32
+		{8B2E97B8-C0CC-4513-AB41-3EC871F1898A}.Debug.Build.0 = Debug|Win32
+		{8B2E97B8-C0CC-4513-AB41-3EC871F1898A}.Release.ActiveCfg = Release|Win32
+		{8B2E97B8-C0CC-4513-AB41-3EC871F1898A}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

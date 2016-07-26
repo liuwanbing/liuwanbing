@@ -1,0 +1,125 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by GameClient.rc
+//
+#define IDR_MANIFEST                    1
+#define IDC_CURSOR                      133
+#define IDC_LEAVE                       134
+#define IDD_GAME_END                    135
+#define IDC_BEGIN                       136
+#define IDD_NT_LIST                     137
+#define IDD_SHOW_NOTE_BTN               138
+#define IDD_GAME_SET                    139
+#define IDI_CLIENT_LIST                 1000
+#define IDI_CLIENT_ROOM                 1001
+#define IDD_EASY_LIST                   1009
+#define IDC_LEFT_USER                   1010
+#define IDC_LEAVE_MSG                   1011
+#define IDC_SOUND                       1012
+#define IDC_WATCH                       1013
+#define IDC_USER_MESSAGE                1014
+#define IDD_STOP_MESSAGE                1015
+#define IDC_SOUND2                      1015
+#define IDC_CHECK1                      1015
+#define IDC_CHECK_TALKSOUND             1015
+#define IDC_RIGHT_POWER                 1016
+#define IDC_SOUND4                      1016
+#define IDC_SLIDER1                     1016
+#define IDC_SLIDER                      1016
+#define IDC_CANCEL                      1017
+#define IDC_SOUND3                      1017
+#define IDC_CHECK2                      1017
+#define IDC_BUTTON1                     1017
+#define IDC_OK                          1018
+#define IDC_BUTTON2                     1018
+#define IDD_SHOW_NOTE                   1019
+#define IDC_BUTTON3                     1019
+#define IDD_NOTE_ANIMAL                 1020
+#define IDC_THING                       1021
+#define IDC_ACT_NOTE                    1022
+#define IDC_ACT_FOLLOW                  1023
+#define IDC_ACT_ADD                     1024
+#define IDC_ACT_GIVEUP                  1026
+#define IDC_ACT_SHOW                    1027
+#define IDC_ALL_FOLLOW                  1028
+#define IDC_FIRST_FOLLOW                1029
+#define IDD_GAME_SET1                   1046
+#define IDC_CURSOR1                     1047
+#define IDC_HAND                        1047
+
+#define IDD_CARD_SET                    570
+#define IDC_HEITAO_1                    571
+#define IDC_HEITAO_2                    572
+#define IDC_HEITAO_3                    573
+#define IDC_HEITAO_4                    574
+#define IDC_HEITAO_5                    575
+#define IDC_HEITAO_6                    576
+#define IDC_HEITAO_7                    577
+#define IDC_HEITAO_8                    578
+#define IDC_HEITAO_9                    579
+#define IDC_HEITAO_10                   580
+#define IDC_HEITAO_J                    581
+#define IDC_HEITAO_Q                    582
+#define IDC_HEITAO_K                    583
+#define IDC_HONGTAO_1                   584
+#define IDC_HONGTAO_2                   585
+#define IDC_HONGTAO_3                   586
+#define IDC_HONGTAO_4                   587
+#define IDC_HONGTAO_5                   588
+#define IDC_HONGTAO_6                   589
+#define IDC_HONGTAO_7                   590
+#define IDC_HONGTAO_8                   591
+#define IDC_HONGTAO_9                   592
+#define IDC_HONGTAO_10                  593
+#define IDC_HONGTAO_J                   594
+#define IDC_HONGTAO_Q                   595
+#define IDC_HONGTAO_K                   596
+#define IDC_MEIHUA_1                    597
+#define IDC_MEIHUA_2                    598
+#define IDC_MEIHUA_3                    599
+#define IDC_MEIHUA_4                    600
+#define IDC_MEIHUA_5                    601
+#define IDC_MEIHUA_6                    602
+#define IDC_MEIHUA_7                    603
+#define IDC_MEIHUA_8                    604
+#define IDC_MEIHUA_9                    605
+#define IDC_MEIHUA_10                   606
+#define IDC_MEIHUA_J                    607
+#define IDC_MEIHUA_Q                    608
+#define IDC_MEIHUA_K                    609
+#define IDC_FANGKUAI_1                  610
+#define IDC_FANGKUAI_2                  611
+#define IDC_FANGKUAI_3                  612
+#define IDC_FANGKUAI_4                  613
+#define IDC_FANGKUAI_5                  614
+#define IDC_FANGKUAI_6                  615
+#define IDC_FANGKUAI_7                  616
+#define IDC_FANGKUAI_8                  617
+#define IDC_FANGKUAI_9                  618
+#define IDC_FANGKUAI_10                 619
+#define IDC_FANGKUAI_J                  620
+#define IDC_FANGKUAI_Q                  621
+#define IDC_FANGKUAI_K                  622
+#define IDC_WANG_1                      623
+#define IDC_WANG_2                      624
+#define IDC_CARD_1                      625
+#define IDC_CARD_2                      626
+#define IDC_CARD_3                      627
+#define IDC_CARD_4                      628
+#define IDC_DESK_0                      629
+#define IDC_DESK_1                      630
+#define IDC_DESK_2                      631
+#define IDC_DESK_3                      632
+#define IDC_DESK_4                      633
+#define IDC_DESK_5                      634
+#define IDC_DESK_6                      635
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        1048
+#define _APS_NEXT_COMMAND_VALUE         32771
+#define _APS_NEXT_CONTROL_VALUE         1020
+#define _APS_NEXT_SYMED_VALUE           1008
+#endif
+#endif

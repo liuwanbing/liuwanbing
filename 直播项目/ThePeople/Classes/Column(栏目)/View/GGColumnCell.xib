@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9046" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9035"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GGColumnCell">
+            <rect key="frame" x="0.0" y="0.0" width="120" height="195"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="120" height="195"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P7p-xU-Caj">
+                        <rect key="frame" x="0.0" y="0.0" width="120" height="165"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs5-OU-HvB">
+                        <rect key="frame" x="8" y="170" width="104" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NRI-2g-9iv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zs5-OU-HvB" secondAttribute="bottom" constant="5" id="DIc-7x-uP0"/>
+                <constraint firstItem="zs5-OU-HvB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Psq-0x-kYH"/>
+                <constraint firstItem="P7p-xU-Caj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="bBj-iD-PKq"/>
+                <constraint firstAttribute="trailing" secondItem="zs5-OU-HvB" secondAttribute="trailing" constant="8" id="hld-Px-f5Z"/>
+                <constraint firstAttribute="trailing" secondItem="P7p-xU-Caj" secondAttribute="trailing" id="nRK-gC-lnB"/>
+                <constraint firstItem="zs5-OU-HvB" firstAttribute="top" secondItem="P7p-xU-Caj" secondAttribute="bottom" constant="5" id="o1x-iJ-e6b"/>
+                <constraint firstItem="P7p-xU-Caj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yK6-I6-uvh"/>
+            </constraints>
+            <size key="customSize" width="100" height="195"/>
+            <connections>
+                <outlet property="image" destination="P7p-xU-Caj" id="6O0-tL-G4W"/>
+                <outlet property="name" destination="zs5-OU-HvB" id="Yo6-VG-D9S"/>
+            </connections>
+            <point key="canvasLocation" x="330" y="372.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

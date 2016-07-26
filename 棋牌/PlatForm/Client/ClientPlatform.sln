@@ -1,0 +1,119 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "系统资源库", "Resource2003\AFCResDll.vcxproj", "{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "主库", "UILibrary2003\AFC.vcxproj", "{F904BC73-7164-435C-94AB-A59B59513E65}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "主框架", "MainFrame\GamePlace.vcxproj", "{2151A424-D224-4EF3-BBBA-A3AB518AB23A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AfcSocket", "AfcSocket\AfcSocket.vcxproj", "{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		多开|Win32 = 多开|Win32
+		机器人|Win32 = 机器人|Win32
+		内部测试版|Win32 = 内部测试版|Win32
+		无技术支持(资源压缩)|Win32 = 无技术支持(资源压缩)|Win32
+		无技术支持|Win32 = 无技术支持|Win32
+		压缩release|Win32 = 压缩release|Win32
+		压缩多开|Win32 = 压缩多开|Win32
+		压缩资源版|Win32 = 压缩资源版|Win32
+		硬件加速|Win32 = 硬件加速|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.Debug|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.Debug|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.Release|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.Release|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.多开|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.多开|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.机器人|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.机器人|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.内部测试版|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.内部测试版|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.无技术支持(资源压缩)|Win32.ActiveCfg = 无技术支持(资源压缩)|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.无技术支持(资源压缩)|Win32.Build.0 = 无技术支持(资源压缩)|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.无技术支持|Win32.ActiveCfg = 无技术支持|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.无技术支持|Win32.Build.0 = 无技术支持|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩release|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩release|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩多开|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩多开|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩资源版|Win32.ActiveCfg = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.压缩资源版|Win32.Build.0 = Release|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.硬件加速|Win32.ActiveCfg = 硬件加速|Win32
+		{D32D9CB0-CBC9-4072-BCF0-F000A8616C2F}.硬件加速|Win32.Build.0 = 硬件加速|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.Debug|Win32.ActiveCfg = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.Debug|Win32.Build.0 = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.Release|Win32.ActiveCfg = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.Release|Win32.Build.0 = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.多开|Win32.ActiveCfg = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.多开|Win32.Build.0 = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.机器人|Win32.ActiveCfg = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.机器人|Win32.Build.0 = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.内部测试版|Win32.ActiveCfg = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.内部测试版|Win32.Build.0 = Release|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.无技术支持(资源压缩)|Win32.ActiveCfg = 无技术支持(资源压缩)|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.无技术支持(资源压缩)|Win32.Build.0 = 无技术支持(资源压缩)|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.无技术支持|Win32.ActiveCfg = 无技术支持|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.无技术支持|Win32.Build.0 = 无技术支持|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩release|Win32.ActiveCfg = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩release|Win32.Build.0 = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩多开|Win32.ActiveCfg = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩多开|Win32.Build.0 = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩资源版|Win32.ActiveCfg = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.压缩资源版|Win32.Build.0 = 压缩资源版|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.硬件加速|Win32.ActiveCfg = 硬件加速|Win32
+		{F904BC73-7164-435C-94AB-A59B59513E65}.硬件加速|Win32.Build.0 = 硬件加速|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.Debug|Win32.ActiveCfg = Release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.Debug|Win32.Build.0 = Release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.Release|Win32.ActiveCfg = Release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.Release|Win32.Build.0 = Release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.多开|Win32.ActiveCfg = 多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.多开|Win32.Build.0 = 多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.机器人|Win32.ActiveCfg = 多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.机器人|Win32.Build.0 = 多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.内部测试版|Win32.ActiveCfg = 内部测试版|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.内部测试版|Win32.Build.0 = 内部测试版|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.无技术支持(资源压缩)|Win32.ActiveCfg = 无技术支持(资源压缩)|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.无技术支持(资源压缩)|Win32.Build.0 = 无技术支持(资源压缩)|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.无技术支持|Win32.ActiveCfg = 无技术支持|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.无技术支持|Win32.Build.0 = 无技术支持|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩release|Win32.ActiveCfg = 压缩release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩release|Win32.Build.0 = 压缩release|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩多开|Win32.ActiveCfg = 压缩多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩多开|Win32.Build.0 = 压缩多开|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩资源版|Win32.ActiveCfg = 压缩资源版|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.压缩资源版|Win32.Build.0 = 压缩资源版|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.硬件加速|Win32.ActiveCfg = 硬件加速|Win32
+		{2151A424-D224-4EF3-BBBA-A3AB518AB23A}.硬件加速|Win32.Build.0 = 硬件加速|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.Debug|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.Debug|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.Release|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.Release|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.多开|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.多开|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.机器人|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.机器人|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.内部测试版|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.内部测试版|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.无技术支持(资源压缩)|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.无技术支持(资源压缩)|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.无技术支持|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.无技术支持|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩release|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩release|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩多开|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩多开|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩资源版|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.压缩资源版|Win32.Build.0 = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.硬件加速|Win32.ActiveCfg = Release|Win32
+		{B0DCE420-58A7-4D4C-9C7D-F956B9DEDA58}.硬件加速|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

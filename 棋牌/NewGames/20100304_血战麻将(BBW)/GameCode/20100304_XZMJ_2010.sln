@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{AED8498A-EF02-448A-91BE-06CB4CAD4629}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		SendCard|Win32 = SendCard|Win32
+		发牌器|Win32 = 发牌器|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Debug|Win32.Build.0 = Debug|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release|Win32.ActiveCfg = Release|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release|Win32.Build.0 = Release|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SendCard|Win32.ActiveCfg = SendCard|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SendCard|Win32.Build.0 = SendCard|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.发牌器|Win32.ActiveCfg = SendCard|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.发牌器|Win32.Build.0 = SendCard|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Debug|Win32.Build.0 = Debug|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release|Win32.ActiveCfg = Release|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release|Win32.Build.0 = Release|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SendCard|Win32.ActiveCfg = 发牌器|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SendCard|Win32.Build.0 = 发牌器|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.发牌器|Win32.ActiveCfg = 发牌器|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.发牌器|Win32.Build.0 = 发牌器|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

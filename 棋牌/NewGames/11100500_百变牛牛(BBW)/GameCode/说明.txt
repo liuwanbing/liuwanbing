@@ -1,0 +1,15 @@
+1、声音播放需要改造成bzsound
+2、游戏客户端设置对话框中顺时针出牌功能已经隐藏，如果游戏需要打开此功能时，
+   请对下列函数做相应的修改，此函数应该包括所有逻辑数据到视图数据的转换。
+// 用于玩家换位：比如逆时针、顺时针出牌
+void CClientGameDlg::OnBeforeUpdateViewSeat()
+
+3、如果游戏服务端需要更换位置，下列两个函数十分重要
+// 根据玩家的逻辑位置获取其所坐的位置(服务端移动位置时玩家不一定就坐在逻辑位置上)
+virtual BYTE GetSeatID(BYTE byDeskStation);
+
+// 根据玩家的所坐的位置获取逻辑位置(服务端移动位置时玩家不一定就坐在逻辑位置上)
+virtual BYTE GetDeskStation(BYTE bySeatID);
+
+
+4、如果时2.0平台需要见平台客户端中SetUserTimer设置为虚函数。

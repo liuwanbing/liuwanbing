@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="压缩资源版|Win32">
+      <Configuration>压缩资源版</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{993104BF-6DC7-4F61-81C8-F1E4C3874CE0}</ProjectGuid>
+    <RootNamespace>DllForGame</RootNamespace>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\run\client\release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</EmbedManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_USRDLL;THIS_IS_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;Vfw32.lib;../Input\lib\debug\BZSound.lib;../Input\lib\debug\cfgEngine.lib;../Input\lib\debug\bz2wui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../run\Client\debug\$(ProjectName).dll</OutputFile>
+      <ModuleDefinitionFile>.\DllForGame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>..\Output\lib\debug\DllForGame.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;../../sdk/include/common;../../sdk/include/GameLaunchSdk;../../sdk/include/GameLaunchSdk/Platform;../../sdk/include/NewGameFrame/Client;../../sdk/include/NewGameFrame/Client/Common;../../SDK/include/BzCrashRpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;THIS_IS_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AssemblerOutput>NoListing</AssemblerOutput>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;Vfw32.lib;BZSound.lib;cfgEngine.lib;BZZlib.lib;Graph.lib;UI.lib;Imm32.lib;detours.lib;skinsb.lib;BzCrashRpt.lib;rtcdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\run\client\release\DllForGame.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\sdk\lib\Game;..\..\sdk\lib\common;..\..\sdk\lib\Client\NewUI;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\DllForGame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\SDK\lib\Game\DllForGame.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateMapFile>true</GenerateMapFile>
+      <AssemblyDebug>false</AssemblyDebug>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;../../sdk/include/common;../../sdk/include/GameLaunchSdk;../../sdk/include/GameLaunchSdk/Platform;../../sdk/include/NewGameFrame/Client;../../sdk/include/NewGameFrame/Client/Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_USRDLL;THIS_IS_DLL;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>Winmm.lib;Vfw32.lib;BZSound.lib;cfgEngine.lib;BZZlib.lib;Graph.lib;UI.lib;Imm32.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../run/Client/Release/DllForGame.dll</OutputFile>
+      <AdditionalLibraryDirectories>..\..\sdk\lib\common;..\..\sdk\lib\Client\NewUI;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ModuleDefinitionFile>.\DllForGame.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>..\..\SDK\lib\Game\DllForGame.lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BankDlg.cpp" />
+    <ClCompile Include="BoardCast.cpp" />
+    <ClCompile Include="checkPSW.cpp" />
+    <ClCompile Include="DlgNotify.cpp" />
+    <ClCompile Include="DllForGame.cpp" />
+    <ClCompile Include="DUIMessageWnd.cpp" />
+    <ClCompile Include="Edit2.cpp" />
+    <ClCompile Include="ExpressionWnd.cpp" />
+    <ClCompile Include="GameTrottingWnd.cpp" />
+    <ClCompile Include="IMSetUser.cpp" />
+    <ClCompile Include="LoveSendClassInExe.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="NewGameFrame\XRightFrame.cpp" />
+    <ClCompile Include="PBank4GameWnd.cpp" />
+    <ClCompile Include="PBankDlg.cpp" />
+    <ClCompile Include="Platform\MenuDu.cpp" />
+    <ClCompile Include="Platform\TipWnd.cpp" />
+    <ClCompile Include="Platform\WndAnimate.cpp" />
+    <ClCompile Include="PropPannel.cpp" />
+    <ClCompile Include="RightFrame.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="SkinHeaderCtrl.cpp" />
+    <ClCompile Include="SkinListCtrl.cpp" />
+    <ClCompile Include="SkinMgr.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UseBoardCastWnd.cpp" />
+    <ClCompile Include="UserDetailsDlg.cpp" />
+    <ClCompile Include="Platform\AFCDialog.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFC.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCButton.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCEdit.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCExpressionWnd.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCFunction.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCImage.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCListCtrl.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCLogoResource.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCMenu.cpp" />
+    <ClCompile Include="Platform\AFCRegistry.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCResource.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCWeb.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\AFCWindow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\CardSet.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\ConfirmDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\ContestInfoWnd.cpp" />
+    <ClCompile Include="Platform\DlgDIYChat.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\DlgLeftShow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\explorer1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\FlashViewDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\GameEndView.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\GetPoint.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\Gif.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\IGif.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\MessageHandle.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\MjSet.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\ObjectFactory.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\personalinfo.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\PlaySound.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\PlayView.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\PropSelUser.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\ShowScore.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\UserListDlg.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Platform\UserPower.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">../StdAfx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="NewGameFrame\DebugPrintf.cpp" />
+    <ClCompile Include="NewGameFrame\XGameEngine.cpp" />
+    <ClCompile Include="NewGameFrame\XLogic.cpp" />
+    <ClCompile Include="IPC\ChannelService.cpp" />
+    <ClCompile Include="IPC\DataStorage.cpp" />
+    <ClCompile Include="IPC\IPCControls.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DllForGame.def" />
+    <None Include="res\BUTTON_MOVE.wav" />
+    <None Include="res\button_up.wav" />
+    <None Include="res\CLIENT_LIST.ico" />
+    <None Include="res\CLIENT_ROOM.ico" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\DIS.CUR" />
+    <None Include="res\DllForGame.rc2" />
+    <None Include="res\EP_RES\EP_001.bmp" />
+    <None Include="res\EP_RES\EP_002.bmp" />
+    <None Include="res\EP_RES\EP_003.bmp" />
+    <None Include="res\EP_RES\EP_004.bmp" />
+    <None Include="res\EP_RES\EP_005.bmp" />
+    <None Include="res\EP_RES\EP_006.bmp" />
+    <None Include="res\EP_RES\EP_007.bmp" />
+    <None Include="res\EP_RES\EP_008.bmp" />
+    <None Include="res\EP_RES\EP_009.bmp" />
+    <None Include="res\EP_RES\EP_010.bmp" />
+    <None Include="res\EP_RES\EP_011.bmp" />
+    <None Include="res\EP_RES\EP_012.bmp" />
+    <None Include="res\EP_RES\EP_013.bmp" />
+    <None Include="res\EP_RES\EP_014.bmp" />
+    <None Include="res\EP_RES\EP_015.bmp" />
+    <None Include="res\EP_RES\EP_016.bmp" />
+    <None Include="res\EP_RES\EP_017.bmp" />
+    <None Include="res\EP_RES\EP_018.bmp" />
+    <None Include="res\EP_RES\EP_019.bmp" />
+    <None Include="res\EP_RES\EP_020.bmp" />
+    <None Include="res\EP_RES\EP_021.bmp" />
+    <None Include="res\EP_RES\EP_022.bmp" />
+    <None Include="res\EP_RES\EP_023.bmp" />
+    <None Include="res\EP_RES\EP_024.bmp" />
+    <None Include="res\EP_RES\EP_025.bmp" />
+    <None Include="res\EP_RES\EP_026.bmp" />
+    <None Include="res\EP_RES\EP_027.bmp" />
+    <None Include="res\EP_RES\EP_028.bmp" />
+    <None Include="res\EP_RES\EP_029.bmp" />
+    <None Include="res\EP_RES\EP_030.bmp" />
+    <None Include="res\EP_RES\EP_031.bmp" />
+    <None Include="res\EP_RES\EP_032.bmp" />
+    <None Include="res\EP_RES\EP_033.bmp" />
+    <None Include="res\EP_RES\EP_034.bmp" />
+    <None Include="res\EP_RES\EP_035.bmp" />
+    <None Include="res\EP_RES\EP_036.bmp" />
+    <None Include="res\EP_RES\EP_037.bmp" />
+    <None Include="res\EP_RES\EP_038.bmp" />
+    <None Include="res\EP_RES\EP_039.bmp" />
+    <None Include="res\EP_RES\EP_040.bmp" />
+    <None Include="res\EP_RES\EP_041.bmp" />
+    <None Include="res\EP_RES\EP_042.bmp" />
+    <None Include="res\EP_RES\EP_043.bmp" />
+    <None Include="res\EP_RES\EP_044.bmp" />
+    <None Include="res\EP_RES\EP_045.bmp" />
+    <None Include="res\EP_RES\EP_046.bmp" />
+    <None Include="res\EP_RES\EP_047.bmp" />
+    <None Include="res\EP_RES\EP_048.bmp" />
+    <None Include="res\EP_RES\EP_049.bmp" />
+    <None Include="res\EP_RES\EP_050.bmp" />
+    <None Include="res\EP_RES\EP_051.bmp" />
+    <None Include="res\EP_RES\EP_052.bmp" />
+    <None Include="res\EP_RES\EP_053.bmp" />
+    <None Include="res\EP_RES\EP_054.bmp" />
+    <None Include="res\EP_RES\EP_055.bmp" />
+    <None Include="res\EP_RES\EP_056.bmp" />
+    <None Include="res\EP_RES\EP_057.bmp" />
+    <None Include="res\EP_RES\EP_058.bmp" />
+    <None Include="res\EP_RES\EP_059.bmp" />
+    <None Include="res\EP_RES\EP_060.bmp" />
+    <None Include="res\EP_RES\EP_061.bmp" />
+    <None Include="res\EP_RES\EP_062.bmp" />
+    <None Include="res\EP_RES\EP_063.bmp" />
+    <None Include="res\EP_RES\EP_064.bmp" />
+    <None Include="res\EP_RES\EP_065.bmp" />
+    <None Include="res\EP_RES\EP_066.bmp" />
+    <None Include="res\EP_RES\EP_067.bmp" />
+    <None Include="res\EP_RES\EP_068.bmp" />
+    <None Include="res\HAND.cur" />
+    <None Include="res\HCUR.CUR" />
+    <None Include="res\LOGO\LOST_LOGO.bmp" />
+    <None Include="res\LOGO\MATCH.bmp" />
+    <None Include="res\scroll.bmp" />
+    <None Include="res\SYSTEM_MSG.WAV" />
+    <None Include="res\VCUR.CUR" />
+    <None Include="res\WARN.WAV" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\BankDlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\BoardCast.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\checkPSW.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\ExpressionWnd.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\PBank4GameWnd.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\TipWnd.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\WndAnimate.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\RightFrame.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\SkinMgr.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\XRightFrame.h" />
+    <ClInclude Include="DlgNotify.h" />
+    <ClInclude Include="DllForGame.h" />
+    <ClInclude Include="DUIMessageWnd.h" />
+    <ClInclude Include="Edit2.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\GameTrottingWnd.h" />
+    <ClInclude Include="IMSetUser.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\LoveSendClassInExe.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\MD5.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\pbankdlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\PropPannel.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\sha1.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\SkinHeaderCtrl.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\SkinListCtrl.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\UserDetailsDlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCButton.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCDevHead.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCDialog.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCEdit.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCExpressionWnd.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCFunction.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCImage.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCListCtrl.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCLogoResource.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCMenu.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCRegistry.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCResource.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCTabCtrl.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCWeb.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\AFCWindow.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\bzsound.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\BZUI.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\CardSet.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\ClientComStruct.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\ConfirmDlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\DlgDIYChat.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\DlgLeftShow.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\explorer1.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\FlashViewDlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\GameEndView.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\GetPoint.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\Gif.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\IGif.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\include.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\MessageHandle.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\MJ.H" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\MjSet.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\ObjectFactory.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\PersonalInfo.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\PlaySound.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\playview.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\PropSelUser.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\publicdefine.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\resource.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\ShowScore.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\UserListDlg.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\UserPower.h" />
+    <ClInclude Include="..\..\SDK\include\GameLaunchSdk\Platform\UserProp.h" />
+    <ClInclude Include="..\..\SDK\include\common\basemessage.h" />
+    <ClInclude Include="..\..\SDK\include\common\CenterServerhead.h" />
+    <ClInclude Include="..\..\SDK\include\common\cfgengine.h" />
+    <ClInclude Include="..\..\SDK\include\common\CommonUse.h" />
+    <ClInclude Include="..\..\SDK\include\common\comstruct.h" />
+    <ClInclude Include="..\..\SDK\include\common\gameplacemessage.h" />
+    <ClInclude Include="..\..\SDK\include\common\gameroommessage.h" />
+    <ClInclude Include="..\..\SDK\include\common\IMMessage.h" />
+    <ClInclude Include="..\..\SDK\include\common\propmessage.h" />
+    <ClInclude Include="NewGameFrame\IGameEngine.h" />
+    <ClInclude Include="NewGameFrame\XGameEngine.h" />
+    <ClInclude Include="NewGameFrame\XGameLogicBase.h" />
+    <ClInclude Include="NewGameFrame\XLogic.h" />
+    <ClInclude Include="IPC\ChannelService.h" />
+    <ClInclude Include="IPC\common.h" />
+    <ClInclude Include="IPC\DataStorage.h" />
+    <ClInclude Include="IPC\IPCControls.h" />
+    <ClInclude Include="IPC\Sink.h" />
+    <ClInclude Include="UseBoardCastWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DllForGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DllForGame.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

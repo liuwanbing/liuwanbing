@@ -1,0 +1,321 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Auto_AI.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Auto_AI.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_AUTO_AI_DIALOG DIALOGEX 0, 0, 601, 433
+STYLE DS_SETFONT | WS_POPUP | WS_VISIBLE | WS_BORDER | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,83,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,83,72,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,83,99,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT4,283,49,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,295,101,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,283,71,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,107,330,57,14,ES_AUTOHSCROLL
+    CONTROL         "登陆",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,396,32,10
+    CONTROL         "坐下",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,396,32,10
+    CONTROL         "接受邀请",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,132,396,48,10
+    DEFPUSHBUTTON   "确定",IDOK,438,228,50,16
+    PUSHBUTTON      "取消",IDCANCEL,520,229,50,16
+    LTEXT           "建议",IDC_STATIC_ACCOUNTS,338,75,42,8
+    LTEXT           "0 < x< 30",IDC_STATIC,341,105,37,8
+    CTEXT           "提示",IDC_STATIC_CUE,422,73,153,8
+    LTEXT           "",IDC_STATIC,157,120,8,8
+    GROUPBOX        "登陆配置",IDC_STATIC,16,31,183,252
+    LTEXT           "游戏类型ID",IDC_STATIC,29,50,48,8
+    LTEXT           "游戏名称ID",IDC_STATIC,29,79,48,8
+    LTEXT           "游戏房间ID",IDC_STATIC,29,106,48,8
+    LTEXT           "初始登陆人数",IDC_STATIC,232,104,49,8
+    LTEXT           "数据库中kindid",IDC_STATIC,137,52,57,8
+    LTEXT           "数据库中nameid",IDC_STATIC,137,78,57,8
+    LTEXT           "帐号起始",IDC_STATIC,230,74,41,8
+    LTEXT           "数据库中roomid",IDC_STATIC,137,105,57,8
+    CTEXT           "总人数",IDC_STATIC_USERS,422,58,154,8
+    GROUPBOX        "登陆状态",IDC_STATIC,415,41,167,49
+    GROUPBOX        "帐号动作",IDC_STATIC,16,381,183,34
+    GROUPBOX        "登入选项",IDC_STATIC,16,289,183,87
+    LTEXT           "帐号前缀",IDC_STATIC,230,53,41,8
+    LTEXT           "dkl",IDC_STATIC,337,53,25,8
+    LTEXT           "自动换桌:",IDC_STATIC,116,358,38,8
+    LTEXT           "每桌机器人最多数:",IDC_STATIC,30,334,74,8
+    PUSHBUTTON      "关闭",IDC_BUTTON1,565,7,29,14
+    PUSHBUTTON      "最小化",IDC_BUTTON2,533,7,29,14
+    CTEXT           "机器人登入器",IDC_STATIC_TITLE,136,7,136,8
+    CONTROL         "",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,77,358,16,10
+    LTEXT           "真人同桌:",IDC_STATIC,34,358,42,8
+    CONTROL         "",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,155,358,16,10
+    EDITTEXT        IDC_EDIT10,107,306,57,14,ES_AUTOHSCROLL
+    LTEXT           "每个机器人动作间隔",IDC_STATIC,30,310,74,8
+    GROUPBOX        "静态",IDC_STATIC,223,31,165,163
+    EDITTEXT        IDC_EDIT7,83,126,104,14,ES_AUTOHSCROLL
+    LTEXT           "自动取最小值",IDC_STATIC,29,133,48,8
+    EDITTEXT        IDC_EDIT8,83,153,103,14,ES_AUTOHSCROLL
+    LTEXT           "自动取最大值",IDC_STATIC,29,161,48,8
+    EDITTEXT        IDC_EDIT11,83,178,102,14,ES_AUTOHSCROLL
+    LTEXT           "金币存款值",IDC_STATIC,29,185,48,8
+    EDITTEXT        IDC_EDIT12,125,199,59,14,ES_AUTOHSCROLL
+    LTEXT           "机器人登入时间间隔(秒)",IDC_STATIC,29,202,91,8
+    CONTROL         "是否启用机器人自动存取款功能",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,240,128,10
+    LTEXT           "房间人数上限",IDC_STATIC,29,226,72,8
+    EDITTEXT        IDC_EDIT13,124,220,61,14,ES_AUTOHSCROLL
+    LTEXT           "未登入",IDC_STATIC_ROOMNAME,17,18,120,12
+    GROUPBOX        "登录时间二",IDC_STATIC,222,303,166,54
+    GROUPBOX        "登录时间一",IDC_STATIC,222,245,166,51
+    GROUPBOX        "初始登录结束时间",IDC_STATIC,222,209,167,30
+    GROUPBOX        "登录时间三",IDC_STATIC,222,363,166,52
+    LTEXT           "登录起始时间:",IDC_STATIC1,233,261,53,8
+    LTEXT           "登录结束时间:",IDC_STATIC2,233,277,53,8
+    LTEXT           "登录起始时间:",IDC_STATIC3,232,323,53,8
+    LTEXT           "登录结束时间:",IDC_STATIC4,232,339,53,8
+    LTEXT           "登录起始时间:",IDC_STATIC5,233,382,53,8
+    LTEXT           "登录结束时间:",IDC_STATIC6,233,398,53,8
+    EDITTEXT        IDC_EDIT14,295,258,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC7,321,261,9,8
+    EDITTEXT        IDC_EDIT15,335,258,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC8,359,261,9,8
+    EDITTEXT        IDC_EDIT16,295,276,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC9,321,279,9,8
+    EDITTEXT        IDC_EDIT17,335,276,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC10,359,279,9,8
+    EDITTEXT        IDC_EDIT18,296,319,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC11,322,323,9,8
+    EDITTEXT        IDC_EDIT19,336,319,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC12,360,323,9,8
+    EDITTEXT        IDC_EDIT20,296,337,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC13,322,339,9,8
+    EDITTEXT        IDC_EDIT21,336,337,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC14,360,339,9,8
+    EDITTEXT        IDC_EDIT22,297,378,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC15,323,382,9,8
+    EDITTEXT        IDC_EDIT23,338,378,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC16,362,382,9,8
+    EDITTEXT        IDC_EDIT24,297,396,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC17,323,400,9,8
+    EDITTEXT        IDC_EDIT25,338,396,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC18,362,400,9,8
+    EDITTEXT        IDC_EDIT26,294,220,20,14,ES_AUTOHSCROLL
+    LTEXT           "时",IDC_STATIC19,320,224,9,8
+    EDITTEXT        IDC_EDIT27,335,220,19,14,ES_AUTOHSCROLL
+    LTEXT           "分",IDC_STATIC20,359,224,9,8
+    LTEXT           "登录结束时间:",IDC_STATIC21,232,224,53,8
+    EDITTEXT        IDC_EDIT28,296,121,40,14,ES_AUTOHSCROLL
+    LTEXT           "0 < x< 30",IDC_STATIC,342,125,37,8
+    LTEXT           "登陆时间一人数",IDC_STATIC,231,124,57,8
+    EDITTEXT        IDC_EDIT29,296,142,40,14,ES_AUTOHSCROLL
+    LTEXT           "0 < x< 30",IDC_STATIC,342,146,37,8
+    LTEXT           "登陆时间二人数",IDC_STATIC,231,145,59,8
+    EDITTEXT        IDC_EDIT30,296,162,40,14,ES_AUTOHSCROLL
+    LTEXT           "0 < x< 30",IDC_STATIC,342,166,37,8
+    LTEXT           "登陆时间三人数",IDC_STATIC,231,165,56,8
+    LISTBOX         IDC_LIST1,419,103,160,100,LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "是否开启整存整取",IDC_CHECK7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,253,123,10
+    LTEXT           "整存整取基数",IDC_STATIC_BASE,30,267,49,8
+    EDITTEXT        IDC_EDIT_BASE,85,264,100,14,ES_AUTOHSCROLL
+END
+
+IDD_GAME_ROOM DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_GAME_FRAME DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_SHOW_UPDATE DIALOGEX 0, 0, 260, 167
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "更新历史",IDC_STATIC,16,12,228,136
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "红鸟网络科技"
+            VALUE "FileDescription", "<机器人加载器>"
+            VALUE "FileVersion", "1.0.0.2"
+            VALUE "InternalName", "Auto_AI.exe"
+            VALUE "LegalCopyright", "红鸟网络科技"
+            VALUE "OriginalFilename", "Auto_AI.exe"
+            VALUE "ProductName", "<机器人登陆器>"
+            VALUE "ProductVersion", "1.0.0.2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_AUTO_AI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 594
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 416
+    END
+
+    IDD_GAME_ROOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_GAME_FRAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_SHOW_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Auto_AI.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

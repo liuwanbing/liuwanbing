@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{AED8498A-EF02-448A-91BE-06CB4CAD4629}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcproj", "{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		AutoLoadIni|Win32 = AutoLoadIni|Win32
+		Debug|Win32 = Debug|Win32
+		Release(2r)|Win32 = Release(2r)|Win32
+		Release|Win32 = Release|Win32
+		SuperClient(2R)|Win32 = SuperClient(2R)|Win32
+		SuperClient|Win32 = SuperClient|Win32
+		发牌版|Win32 = 发牌版|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.AutoLoadIni|Win32.ActiveCfg = AutoLoadIni|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.AutoLoadIni|Win32.Build.0 = AutoLoadIni|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Debug|Win32.Build.0 = Debug|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release(2r)|Win32.ActiveCfg = Release(2r)|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release(2r)|Win32.Build.0 = Release(2r)|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release|Win32.ActiveCfg = Release|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.Release|Win32.Build.0 = Release|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SuperClient(2R)|Win32.ActiveCfg = SuperClient(2R)|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SuperClient(2R)|Win32.Build.0 = SuperClient(2R)|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SuperClient|Win32.ActiveCfg = SuperClient|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.SuperClient|Win32.Build.0 = SuperClient|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.发牌版|Win32.ActiveCfg = 发牌版|Win32
+		{AED8498A-EF02-448A-91BE-06CB4CAD4629}.发牌版|Win32.Build.0 = 发牌版|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.AutoLoadIni|Win32.ActiveCfg = AutoLoadIni|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.AutoLoadIni|Win32.Build.0 = AutoLoadIni|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Debug|Win32.Build.0 = Debug|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release(2r)|Win32.ActiveCfg = Release(2r)|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release(2r)|Win32.Build.0 = Release(2r)|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release|Win32.ActiveCfg = Release|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.Release|Win32.Build.0 = Release|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SuperClient(2R)|Win32.ActiveCfg = SuperClient(2R)|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SuperClient(2R)|Win32.Build.0 = SuperClient(2R)|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SuperClient|Win32.ActiveCfg = SuperClient|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.SuperClient|Win32.Build.0 = SuperClient|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.发牌版|Win32.ActiveCfg = 发牌版|Win32
+		{2AB19729-4415-48DB-8A04-1D5AAFCC80D7}.发牌版|Win32.Build.0 = 发牌版|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

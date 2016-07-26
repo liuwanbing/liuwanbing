@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  ThePeopleTV
+//
+//  Created by aoyolo on 16/3/30.
+//  Copyright © 2016年 高广. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIImageView+WebCache.h"
+#import "UIBarButtonItem+Item.h"
+#import "AFNetworking.h"
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//全民tv
+
+//推荐url
+#define RecommendUrl @"http://www.quanmin.tv/json/page/appv2-index/info.json?0330152228"
+//栏目url
+#define ColumnUrl @"http://www.quanmin.tv/json/categories/list.json?0330152804"
+//
+//直播url
+#define DirectSeedingUrl @"http://www.quanmin.tv/json/play/list.json?0330152923"
+
+//视屏播放url，更具id获取
+//http://www.quanm÷Ωin.tv/json/rooms/14269/info.json?0330153625
+
+#endif /* PrefixHeader_pch */

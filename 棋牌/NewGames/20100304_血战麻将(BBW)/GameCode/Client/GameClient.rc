@@ -1,0 +1,240 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "红鸟网络游戏"
+            VALUE "FileDescription", "徐州二人客户端"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "LegalCopyright", "红鸟网络游戏"
+            VALUE "ProductName", "徐州二人客户端"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLIENT_LIST         ICON                    "RES\\CLIENT_LIST.ico"
+IDI_CLIENT_ROOM         ICON                    "res\\CLIENT_ROOM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_GAME_END DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_GAME_SET1 DIALOGEX 0, 0, 198, 110
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "声音效果",IDC_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,21,48,9
+    CONTROL         "允许别人旁观我的游戏",IDC_WATCH,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,24,59,96,9
+    CONTROL         "显示用户进出消息",IDC_USER_MESSAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,40,80,9
+    DEFPUSHBUTTON   "",1,22,82,49,15
+    PUSHBUTTON      "",2,90,82,49,15
+END
+
+IDD_SUPER_SETTING DIALOGEX 0, 0, 174, 141
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "超级客户端"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,104,9,64,84
+    PUSHBUTTON      "取消",IDCANCEL,104,98,64,25
+    CONTROL         "顺门赢",IDC_CHECK_SHUN_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,32,40,10
+    CONTROL         "对门赢",IDC_CHECK_DUI_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,43,40,10
+    CONTROL         "顺门输",IDC_CHECK_SHUN_LOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,83,40,10
+    CONTROL         "对门输",IDC_CHECK_DUI_LOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,96,40,10
+    CONTROL         "倒门输",IDC_CHECK_DAO_LOST,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,107,40,10
+    GROUPBOX        "输赢设置",IDC_STATIC,5,5,94,118
+    CONTROL         "设置1",IDC_RADIO_SETTING1,"Button",BS_AUTORADIOBUTTON,19,19,36,10
+    CONTROL         "设置2",IDC_RADIO_SETTING2,"Button",BS_AUTORADIOBUTTON,19,70,36,10
+    CONTROL         "倒门赢",IDC_CHECK_DAO_WIN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,31,53,40,10
+    CONTROL         "不显示机器人下注筹码数字",IDC_CHECK_NO_SHOW_ROBOT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,128,112,10
+END
+
+IDD_LOOK_LUZI DIALOGEX 0, 0, 196, 97
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Button1",IDC_BUTTON1,19,31,50,14
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,129,7,50,14
+    PUSHBUTTON      "取消",IDCANCEL,129,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_MANIFEST
+//
+
+IDR_MANIFEST            RT_MANIFEST             "res\\UpGrade.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_GAME_SET1, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 196
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 107
+    END
+
+    IDD_SUPER_SETTING, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_LOOK_LUZI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 90
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR                  "res\\HAND.cur"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,10 @@
+;
+; PLC IO module-definition file.
+;
+
+LIBRARY			Sms.dll
+DESCRIPTION		'(c) 2012'
+
+EXPORTS
+			CreateSmsObject		@1 PRIVATE
+			CreateMobileObject	@2 PRIVATE

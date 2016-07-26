@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcxproj", "{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\Client.vcxproj", "{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		72把一局|Win32 = 72把一局|Win32
+		AutoLoadIni|Win32 = AutoLoadIni|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.72把一局|Win32.ActiveCfg = 72把一局|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.72把一局|Win32.Build.0 = 72把一局|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.AutoLoadIni|Win32.ActiveCfg = AutoLoadIni|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.AutoLoadIni|Win32.Build.0 = AutoLoadIni|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.Debug|Win32.ActiveCfg = Video|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.Debug|Win32.Build.0 = Video|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.Release|Win32.ActiveCfg = Release|Win32
+		{DAE3CFCF-E9FF-4C2E-BE9D-BAA592CFDD0F}.Release|Win32.Build.0 = Release|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.72把一局|Win32.ActiveCfg = 72把一局|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.72把一局|Win32.Build.0 = 72把一局|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.AutoLoadIni|Win32.ActiveCfg = AutoLoadIni|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.AutoLoadIni|Win32.Build.0 = AutoLoadIni|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.Debug|Win32.ActiveCfg = Video|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.Debug|Win32.Build.0 = Video|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.Release|Win32.ActiveCfg = Release|Win32
+		{1DBC3D33-F102-4D0D-821A-7B9FA8EE7D1D}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

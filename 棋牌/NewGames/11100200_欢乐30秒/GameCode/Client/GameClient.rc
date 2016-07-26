@@ -1,0 +1,320 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\GameClient.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,5,4
+ PRODUCTVERSION 1,0,5,4
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "百家乐游戏客户端"
+            VALUE "FileVersion", "1.0.5.4"
+            VALUE "InternalName", "GameClient.dll"
+            VALUE "OriginalFilename", "GameClient.dll"
+            VALUE "ProductName", "百家乐游戏客户端"
+            VALUE "ProductVersion", "1.0.5.4"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_CLIENT_LIST         ICON                    "res\\CLIENT_LIST.ico"
+IDI_CLIENT_ROOM         ICON                    "res\\CLIENT_ROOM.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDC_CHECK_TALKSOUND DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,22,74,50,14
+    PUSHBUTTON      "",IDCANCEL,94,74,50,14
+    CONTROL         "声音效果",IDC_ENABLE_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,20,48,10
+    CONTROL         "显示用户进出消息",IDC_USER_IN_OUT_MSG,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,35,80,10
+    CONTROL         "预设聊天内容声音效果",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,52,96,10
+END
+
+IDD_HAVE_THING DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,27,67,50,14
+    PUSHBUTTON      "",IDCANCEL,108,68,50,14
+    EDITTEXT        IDC_THING,35,21,113,33,ES_AUTOHSCROLL,WS_EX_CLIENTEDGE
+END
+
+IDD_THING_MESSAGE DIALOGEX 0, 0, 186, 95
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDOK,33,69,50,14
+    DEFPUSHBUTTON   "",IDCANCEL,104,69,50,14
+    LTEXT           "有事要走的玩家昵称",IDC_HAVETHING_NICKNAME,7,18,165,8
+    EDITTEXT        IDC_HAVETHING_MSG,8,33,170,32,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_LUZI DIALOGEX 0, 0, 446, 153
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "",IDC_BUT_YIYE,61,35,50,14
+    PUSHBUTTON      "",IDC_BUT_ERYE,142,34,50,14
+    PUSHBUTTON      "",IDC_BUT_CLOSE,327,3,32,14
+END
+
+IDD_RESULT DIALOGEX 0, 0, 242, 162
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_GAME_SET1 DIALOGEX 0, 0, 194, 117
+STYLE DS_SETFONT | DS_CENTER | WS_POPUP
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "",IDOK,21,85,49,16
+    PUSHBUTTON      "",IDCANCEL,92,85,49,16
+    CONTROL         "游戏声音效果",IDC_SOUND,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,24,27,88,10
+    CONTROL         "允许别人旁观我的游戏",IDC_WATCH,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,98,57,96,10
+    CONTROL         "显示用户进出消息",IDC_USER_MESSAGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,49,80,10
+    CONTROL         "顺时针出牌",IDC_RIGHT_POWER,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,109,69,56,10
+    CONTROL         "预设聊天内容声音效果",IDC_CHECK_TALKSOUND,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,24,23,96,10
+END
+
+IDD_SUPER_SETTING DIALOGEX 0, 0, 129, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "游戏设置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,76,10,50,31
+    PUSHBUTTON      "取消",IDCANCEL,76,52,50,31
+    GROUPBOX        "选项",IDC_STATIC,5,6,65,77
+    CONTROL         "正常",IDC_RADIO_NORMAL,"Button",BS_AUTORADIOBUTTON,16,23,32,10
+    CONTROL         "庄家赢",IDC_RADIO_ZHUANG_WIN,"Button",BS_AUTORADIOBUTTON,16,42,40,10
+    CONTROL         "庄家输",IDC_RADIO_ZHUANG_LOST,"Button",BS_AUTORADIOBUTTON,16,62,40,10
+END
+
+IDD_SHOW_AI_INFO DIALOGEX 0, 0, 277, 258
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "机器人信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "是否发送修改消息",IDC_CH_CHANGE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,38,138,81,10
+    CONTROL         "清零当前赢钱",IDC_CH_CLEAR_WIN,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,44,175,69,10
+    CONTROL         "修改当前配置",IDC_CH_CHANGE_SET,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,43,195,66,10
+    CONTROL         "开启控制",IDC_CH_SET_CTRL,"Button",BS_AUTOCHECKBOX | WS_DISABLED | WS_TABSTOP,137,157,71,10
+    EDITTEXT        IDC_EDIT_GOAL_MONEY,181,172,45,14,ES_AUTOHSCROLL | WS_DISABLED
+    EDITTEXT        IDC_EDIT_AVE_MONEY,182,198,45,14,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "赢钱目标",IDC_STATIC,136,174,43,13
+    LTEXT           "平均值",IDC_STATIC,137,201,36,14
+    GROUPBOX        "配置设置",IDC_STATIC,126,144,117,80
+    GROUPBOX        "修改选项",IDC_STATIC,29,153,88,70
+    PUSHBUTTON      "发送修改消息",IDC_BUT_SEND_CHANGE,98,234,56,14,WS_DISABLED
+END
+
+IDD_SUPERGM DIALOGEX 0, 0, 513, 309
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "百家乐超级GM工具"
+FONT 9, "宋体", 400, 0, 0x86
+BEGIN
+    PUSHBUTTON      "取消",IDCANCEL,16,283,87,16
+    CONTROL         "",1071,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,22,28,468,200
+    GROUPBOX        "玩家下注情况",IDC_STATIC,15,14,485,219
+    SCROLLBAR       1072,491,266,10,40,SBS_VERT | NOT WS_VISIBLE
+    GROUPBOX        "选择开的区域",IDC_STATIC,16,235,477,36
+    LTEXT           "超级用户必须在下注期间完成对所开区域的选择，其他时间段是无效的操作",IDC_STATIC,120,292,286,11
+    LTEXT           "静态",IDC_STATIC_INFO,321,253,167,14
+    CONTROL         "开庄",IDC_RADIO_Z,"Button",BS_AUTORADIOBUTTON | WS_GROUP,46,251,32,10
+    CONTROL         "开闲",IDC_RADIO_X,"Button",BS_AUTORADIOBUTTON | WS_GROUP,92,251,32,10
+    CONTROL         "开和",IDC_RADIO_H,"Button",BS_AUTORADIOBUTTON | WS_GROUP,138,251,32,10
+    CONTROL         "取消控制",IDC_RADIO_N,"Button",BS_AUTORADIOBUTTON | WS_GROUP,187,252,48,10
+    CONTROL         "显示机器人信息",IDC_CHECK_ROBOT_INFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,238,252,72,10
+    LTEXT           "庄区域倍率和：",IDC_STATIC,112,275,56,8
+    LTEXT           "闲区域倍率和：",IDC_STATIC,241,274,56,8
+    LTEXT           "和区域倍率和：",IDC_STATIC,367,275,56,8
+    LTEXT           "",IDC_STATIC_ZHUANG_TOTLE,169,274,69,8
+    LTEXT           "",IDC_STATIC_XIAN_TOTLE,298,273,65,8
+    LTEXT           "",IDC_STATIC_HE_TOTLE,423,274,66,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDC_CHECK_TALKSOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_HAVE_THING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_THING_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_LUZI, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 3
+    END
+
+    IDD_RESULT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+    END
+
+    IDD_SHOW_AI_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 251
+    END
+
+    IDD_SUPERGM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 306
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND1               CURSOR                  "res\\cursor1.cur"
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\GameClient.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

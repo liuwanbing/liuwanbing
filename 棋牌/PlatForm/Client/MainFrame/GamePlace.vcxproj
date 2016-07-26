@@ -1,0 +1,1216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="内部测试版|Win32">
+      <Configuration>内部测试版</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="压缩release|Win32">
+      <Configuration>压缩release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="压缩多开|Win32">
+      <Configuration>压缩多开</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="压缩资源版|Win32">
+      <Configuration>压缩资源版</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="多开|Win32">
+      <Configuration>多开</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="无技术支持(资源压缩)|Win32">
+      <Configuration>无技术支持(资源压缩)</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="无技术支持|Win32">
+      <Configuration>无技术支持</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="机器人|Win32">
+      <Configuration>机器人</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="硬件加速|Win32">
+      <Configuration>硬件加速</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>主框架</ProjectName>
+    <ProjectGuid>{2151A424-D224-4EF3-BBBA-A3AB518AB23A}</ProjectGuid>
+    <RootNamespace>主框架</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='多开|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='多开|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">$(TargetDir)</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">false</LinkIncremental>
+    <EmbedManifest Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">true</EmbedManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='多开|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='多开|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\运行\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;MY_DEV;MY_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZW_D.lib;BZSound.lib;cfgEngine.lib;ftp.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\运行\客户端\DEBUG\BZW_DEBUG.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\..\sdk\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include\ClientCommon;../../../SDK/include/socket;../../../SDK/include/BzCrashRpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4005;4018;4800;4244;4101;4010;4267;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>HNMR.lib;BZSound.lib;cfgEngine.lib;ftp.lib;PRStructExchange.lib;detours.lib;skinsb.lib;BzCrashRpt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\JJQP.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <OmitFramePointers>false</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/socket;../../../SDK/include/BzCrashRpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MY_DEBUG;DEV_NOFREE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZSound.lib;cfgEngine.lib;ftp.lib;HNMR.lib;PRStructExchange.lib;detours.lib;skinsb.lib;BzCrashRpt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\jjqp_M.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\运行\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MY_DEBUG;AI_MACHINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>..\..\运行\lib\release\BZW.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\运行\客户端\release\BZW_AI.exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <GenerateMapFile>false</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/NewGameFrame;../../../SDK/include/socket;../../../SDK/include/BzCrashRpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MY_DEBUG;MY_DEV;MY_QUICK_GAME_ON;MY_BANK_PASSWORD_OFF;MY_MOBILE_VCODE_OFF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZSound.lib;cfgEngine.lib;ftp.lib;BZW.lib;PRStructExchange.lib;detours.lib;skinsb.lib;AFCSocket.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_DEV_FOR_EXE.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <MapExports>false</MapExports>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <UACExecutionLevel>HighestAvailable</UACExecutionLevel>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/socket;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MY_DEBUG;MY_DEV;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZSound.lib;cfgEngine.lib;ftp.lib;BZW.lib;PRStructExchange.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_DEV_FOR_EXE.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\..\sdk\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/NewGameFrame/Client;../../../SDK/include/socket;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4005;4018;4800;4244;4101;4010;4267;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZW.lib;BZSound.lib;cfgEngine.lib;ftp.lib;PRStructExchange.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_R.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/socket;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;MY_DEBUG;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>
+      </AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZSound.lib;cfgEngine.lib;ftp.lib;BZW.lib;PRStructExchange.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_M.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>true</AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\..\sdk\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/socket;../../../SDK/include/BzCrashRpt;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEV_NOFREE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4005;4018;4800;4244;4101;4010;4267;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZW.lib;BZSound.lib;cfgEngine.lib;ftp.lib;PRStructExchange.lib;detours.lib;skinsb.lib;BzCrashRpt.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_R.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\..\sdk\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include\ClientCommon;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEV_NOFREE;HWACC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZW.lib;BZSound.lib;cfgEngine.lib;ftp.lib;PRStructExchange.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_R.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">
+    <PreBuildEvent>
+      <Command>..\..\..\sdk\lib\BuildAddin.exe $(ProjectDir)</Command>
+    </PreBuildEvent>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>../../../SDK/include/common;../../../SDK/include/ClientCommon;../../../SDK/include/socket;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;DEV_NOFREE;BZ_ZLIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AssemblerOutput>All</AssemblerOutput>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>BZW.lib;BZSound.lib;cfgEngine.lib;ftp.lib;PRStructExchange.lib;detours.lib;skinsb.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>..\..\..\run\Client\release\BZW_R.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\sdk\lib\common;..\..\..\sdk\lib\Client;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>
+      </AssemblyDebug>
+      <GenerateMapFile>true</GenerateMapFile>
+      <MapFileName>
+      </MapFileName>
+      <MapExports>true</MapExports>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AddFriend.cpp" />
+    <ClCompile Include="AFCActWnd.cpp" />
+    <ClCompile Include="AfcGamelistWnd.cpp" />
+    <ClCompile Include="afCRoomRightWnd.cpp" />
+    <ClCompile Include="AfcTopWnd.cpp" />
+    <ClCompile Include="Apipe.cpp" />
+    <ClCompile Include="AppealDlg.cpp" />
+    <ClCompile Include="AutoUpdate.cpp" />
+    <ClCompile Include="BankDlg.cpp" />
+    <ClCompile Include="BankVerifyWnd.cpp" />
+    <ClCompile Include="BaseRoom.cpp" />
+    <ClCompile Include="BitmapListCtrl.cpp" />
+    <ClCompile Include="BoardCast.cpp" />
+    <ClCompile Include="Bulletin.cpp" />
+    <ClCompile Include="BzLog.cpp" />
+    <ClCompile Include="CharmExchange.cpp" />
+    <ClCompile Include="ChatControl.cpp" />
+    <ClCompile Include="chatting.cpp" />
+    <ClCompile Include="checkPSW.cpp" />
+    <ClCompile Include="ColorComboBox.cpp" />
+    <ClCompile Include="DeskFrameView.cpp" />
+    <ClCompile Include="DialogCallGM.cpp" />
+    <ClCompile Include="DlgInMoney.cpp" />
+    <ClCompile Include="DlgOutMoney.cpp" />
+    <ClCompile Include="DlgRoomFee.cpp" />
+    <ClCompile Include="DlgRoomPW.cpp" />
+    <ClCompile Include="DlgTransferMoney.cpp" />
+    <ClCompile Include="DownloadListUI.cpp" />
+    <ClCompile Include="DownloadWnd.cpp" />
+    <ClCompile Include="DUITopWnd.cpp" />
+    <ClCompile Include="DUIUserTabWnd.cpp" />
+    <ClCompile Include="explorer1.cpp" />
+    <ClCompile Include="ExtRobot.cpp" />
+    <ClCompile Include="FileVersion.cpp" />
+    <ClCompile Include="FinanceWnd.cpp" />
+    <ClCompile Include="FindNullDesk.cpp" />
+    <ClCompile Include="FindUserDlg.cpp" />
+    <ClCompile Include="GameElement.cpp" />
+    <ClCompile Include="GameListCtrl.cpp" />
+    <ClCompile Include="GameListTip.cpp" />
+    <ClCompile Include="GameListUI.cpp" />
+    <ClCompile Include="GamePlace.cpp" />
+    <ClCompile Include="GamePlaceDlg.cpp" />
+    <ClCompile Include="GameRoomEx.cpp" />
+    <ClCompile Include="GameUserManage.cpp" />
+    <ClCompile Include="GetHelpMoneyDlg.cpp" />
+    <ClCompile Include="GMListDlg.cpp" />
+    <ClCompile Include="GMMsgDlg.cpp" />
+    <ClCompile Include="HttpDownloadDlg.cpp" />
+    <ClCompile Include="IDKeyBoardWnd.cpp" />
+    <ClCompile Include="IDVerifyWnd.cpp" />
+    <ClCompile Include="IEAdvertise.cpp" />
+    <ClCompile Include="LeftWnd.cpp" />
+    <ClCompile Include="LogoChangeDlg.cpp" />
+    <ClCompile Include="MobileVerifyWnd.cpp" />
+    <ClCompile Include="NewControl\IEHelper.cpp" />
+    <ClCompile Include="IMMain.cpp" />
+    <ClCompile Include="IMSession.cpp" />
+    <ClCompile Include="IMSetUser.cpp" />
+    <ClCompile Include="IMWnd.cpp" />
+    <ClCompile Include="ItemDlg.cpp" />
+    <ClCompile Include="LockAccountDlg.cpp" />
+    <ClCompile Include="LogonDialog.cpp" />
+    <ClCompile Include="LogoSelect.cpp" />
+    <ClCompile Include="LogoUpload.cpp" />
+    <ClCompile Include="MainRoomEx.cpp" />
+    <ClCompile Include="ManageDlg.cpp" />
+    <ClCompile Include="MD5.cpp" />
+    <ClCompile Include="MiniPopWnd.cpp" />
+    <ClCompile Include="MyButton.cpp" />
+    <ClCompile Include="MyDiskInfo.cpp" />
+    <ClCompile Include="MyListCtrl.cpp" />
+    <ClCompile Include="NavigationDlg.cpp" />
+    <ClCompile Include="PassDesk.cpp" />
+    <ClCompile Include="PBankDlg.cpp" />
+    <ClCompile Include="PBankWnd.cpp" />
+    <ClCompile Include="PBankWndEx.cpp" />
+    <ClCompile Include="PersonalSet.cpp" />
+    <ClCompile Include="PlaceResource.cpp" />
+    <ClCompile Include="PropPannel.cpp" />
+    <ClCompile Include="queueInRoomDlg.cpp" />
+    <ClCompile Include="QuitAsk.cpp" />
+    <ClCompile Include="RegisterNewUserDlg.cpp" />
+    <ClCompile Include="RegSucDlg.cpp" />
+    <ClCompile Include="RoomSetDlg.cpp" />
+    <ClCompile Include="RoomSetWnd.cpp" />
+    <ClCompile Include="SafeCenterWnd.cpp" />
+    <ClCompile Include="SendWarnDlg.cpp" />
+    <ClCompile Include="SetDeskBasePoint.cpp" />
+    <ClCompile Include="SetFriend.cpp" />
+    <ClCompile Include="sha1.cpp" />
+    <ClCompile Include="SkinMgr.cpp" />
+    <ClCompile Include="Socket32.cpp" />
+    <ClCompile Include="SoftKey.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="NewControl\StringHelper.cpp" />
+    <ClCompile Include="TCPServer.cpp" />
+    <ClCompile Include="TransparentStatic.cpp" />
+    <ClCompile Include="NewControl\TStatic.cpp" />
+    <ClCompile Include="UseBoardCastWnd.cpp" />
+    <ClCompile Include="UserDetailsDlg.cpp" />
+    <ClCompile Include="UserInfoWnd.cpp" />
+    <ClCompile Include="UserListCtrl.cpp" />
+    <ClCompile Include="VipTipDlg.cpp" />
+    <ClCompile Include="WebWnd.cpp" />
+    <ClCompile Include="gif\WndAnimate.cpp" />
+    <ClCompile Include="IPC\ChannelService.cpp" />
+    <ClCompile Include="IPC\DataStorage.cpp" />
+    <ClCompile Include="IPC\IPCControls.cpp" />
+    <ClCompile Include="IPC\ServerSocketSelect.cpp" />
+    <ClCompile Include="LoveSendClassForEXE.cpp" />
+    <ClCompile Include="SkinListCtrl\SkinHeaderCtrl.cpp" />
+    <ClCompile Include="SkinListCtrl\SkinListCtrl.cpp" />
+    <ClCompile Include="XUnzip.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AddFriend.h" />
+    <ClInclude Include="AFCActWnd.h" />
+    <ClInclude Include="AfcGamelistWnd.h" />
+    <ClInclude Include="afCRoomRightWnd.h" />
+    <ClInclude Include="AfcTopWnd.h" />
+    <ClInclude Include="Apipe.h" />
+    <ClInclude Include="AppealDlg.h" />
+    <ClInclude Include="AutoUpdate.h" />
+    <ClInclude Include="BankDlg.h" />
+    <ClInclude Include="BankVerifyWnd.h" />
+    <ClInclude Include="BaseRoom.h" />
+    <ClInclude Include="BitmapListCtrl.h" />
+    <ClInclude Include="BoardCast.h" />
+    <ClInclude Include="Bulletin.h" />
+    <ClInclude Include="BzLog.h" />
+    <ClInclude Include="CharmExchange.h" />
+    <ClInclude Include="ChatControl.h" />
+    <ClInclude Include="chatting.h" />
+    <ClInclude Include="checkPSW.h" />
+    <ClInclude Include="ColorComboBox.h" />
+    <ClInclude Include="DeskFrameView.h" />
+    <ClInclude Include="DialogCallGM.h" />
+    <ClInclude Include="DlgInMoney.h" />
+    <ClInclude Include="DlgOutMoney.h" />
+    <ClInclude Include="DlgRoomFee.h" />
+    <ClInclude Include="DlgRoomPW.h" />
+    <ClInclude Include="DlgTransferMoney.h" />
+    <ClInclude Include="DownloadListUI.h" />
+    <ClInclude Include="DownloadWnd.h" />
+    <ClInclude Include="DUITopWnd.h" />
+    <ClInclude Include="DUIUserTabWnd.h" />
+    <ClInclude Include="explorer1.h" />
+    <ClInclude Include="ExtRobot.h" />
+    <ClInclude Include="FileVersion.h" />
+    <ClInclude Include="FinanceWnd.h" />
+    <ClInclude Include="FindNullDesk.h" />
+    <ClInclude Include="FindUserDlg.h" />
+    <ClInclude Include="GameElementUI.h" />
+    <ClInclude Include="GameListCtrl.h" />
+    <ClInclude Include="GameListTip.h" />
+    <ClInclude Include="GameListUI.h" />
+    <ClInclude Include="GamePlace.h" />
+    <ClInclude Include="GamePlaceDlg.h" />
+    <ClInclude Include="GameRoomEx.h" />
+    <ClInclude Include="..\..\消息文件\gameroommessage.h" />
+    <ClInclude Include="GameUserManage.h" />
+    <ClInclude Include="GetHelpMoneyDlg.h" />
+    <ClInclude Include="GMListDlg.h" />
+    <ClInclude Include="GMMsgDlg.h" />
+    <ClInclude Include="HttpDownloadDlg.h" />
+    <ClInclude Include="IDKeyBoardWnd.h" />
+    <ClInclude Include="IDVerifyWnd.h" />
+    <ClInclude Include="IEAdvertise.h" />
+    <ClInclude Include="LeftWnd.h" />
+    <ClInclude Include="LogoChangeDlg.h" />
+    <ClInclude Include="MobileVerifyWnd.h" />
+    <ClInclude Include="NewControl\IEHelper.h" />
+    <ClInclude Include="IMMain.h" />
+    <ClInclude Include="IMSession.h" />
+    <ClInclude Include="IMSetUser.h" />
+    <ClInclude Include="IMWnd.h" />
+    <ClInclude Include="ItemDlg.h" />
+    <ClInclude Include="LockAccountDlg.h" />
+    <ClInclude Include="LogonDialog.h" />
+    <ClInclude Include="LogoSelect.h" />
+    <ClInclude Include="LogoUpload.h" />
+    <ClInclude Include="MainRoomEx.h" />
+    <ClInclude Include="ManageDlg.h" />
+    <ClInclude Include="MD5.h" />
+    <ClInclude Include="MiniPopWnd.h" />
+    <ClInclude Include="MyButton.h" />
+    <ClInclude Include="MyListCtrl.h" />
+    <ClInclude Include="NavigationDlg.h" />
+    <ClInclude Include="PassDesk.h" />
+    <ClInclude Include="PBankDlg.h" />
+    <ClInclude Include="PBankWnd.h" />
+    <ClInclude Include="PBankWndEx.h" />
+    <ClInclude Include="PersonalSet.h" />
+    <ClInclude Include="PlaceResource.h" />
+    <ClInclude Include="..\..\消息文件\PropMessage.h" />
+    <ClInclude Include="PropPannel.h" />
+    <ClInclude Include="queueInRoomDlg.h" />
+    <ClInclude Include="QuitAsk.h" />
+    <ClInclude Include="RegisterNewUserDlg.h" />
+    <ClInclude Include="RegSucDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoomSetDlg.h" />
+    <ClInclude Include="RoomSetWnd.h" />
+    <ClInclude Include="SafeCenterWnd.h" />
+    <ClInclude Include="SendWarnDlg.h" />
+    <ClInclude Include="SetDeskBasePoint.h" />
+    <ClInclude Include="SetFriend.h" />
+    <ClInclude Include="sha1.h" />
+    <ClInclude Include="SkinMgr.h" />
+    <ClInclude Include="Socket32.h" />
+    <ClInclude Include="SoftKey.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="NewControl\StringHelper.h" />
+    <ClInclude Include="TCPServer.h" />
+    <ClInclude Include="TransparentStatic.h" />
+    <ClInclude Include="NewControl\TStatic.h" />
+    <ClInclude Include="UIMarqueeText.h" />
+    <ClInclude Include="UseBoardCastWnd.h" />
+    <ClInclude Include="UserDetailsDlg.h" />
+    <ClInclude Include="UserInfoView.h" />
+    <ClInclude Include="UserInfoWnd.h" />
+    <ClInclude Include="UserListCtrl.h" />
+    <ClInclude Include="VipTipDlg.h" />
+    <ClInclude Include="WebWnd.h" />
+    <ClInclude Include="IPC\ChannelService.h" />
+    <ClInclude Include="IPC\common.h" />
+    <ClInclude Include="IPC\DataStorage.h" />
+    <ClInclude Include="IPC\IPCControls.h" />
+    <ClInclude Include="IPC\ServerSocketSelect.h" />
+    <ClInclude Include="IPC\Sink.h" />
+    <ClInclude Include="LoveSendClassForEXE.h" />
+    <ClInclude Include="SkinListCtrl\MEMDC.H" />
+    <ClInclude Include="SkinListCtrl\SkinHeaderCtrl.h" />
+    <ClInclude Include="SkinListCtrl\SkinListCtrl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\About.bmp" />
+    <None Include="res\AGREE.bmp" />
+    <None Include="res\BANK_ICON.ico" />
+    <None Include="res\BEGIN.bmp" />
+    <None Include="res\begin_chess.bmp" />
+    <None Include="Res\bg.bmp" />
+    <None Include="Res\bgcon.bmp" />
+    <None Include="res\bitmap_GSQ_Back.bmp" />
+    <None Include="res\bitmap_GSQ_OTHER_Back.bmp" />
+    <None Include="Res\Black.ico" />
+    <None Include="res\Bottom_BBS.bmp" />
+    <None Include="res\Bottom_Close.bmp" />
+    <None Include="res\Bottom_Min.bmp" />
+    <None Include="res\BT_ACTION.bmp" />
+    <None Include="res\BT_EXPESSION.bmp" />
+    <None Include="res\BT_TALK_SET.bmp" />
+    <None Include="res\Button_BBS.bmp" />
+    <None Include="res\Button_BBS_s.bmp" />
+    <None Include="res\Button_ChatRoom.bmp" />
+    <None Include="res\Button_ChatRoom_s.bmp" />
+    <None Include="res\Button_Close.bmp" />
+    <None Include="res\Button_CreateRoom.bmp" />
+    <None Include="res\Button_CreateRoom_s.bmp" />
+    <None Include="res\Button_Information.bmp" />
+    <None Include="res\Button_Information_s.bmp" />
+    <None Include="res\Button_Min.bmp" />
+    <None Include="res\Button_Prop.bmp" />
+    <None Include="res\Button_Prop_s.bmp" />
+    <None Include="res\Button_Set_s.bmp" />
+    <None Include="Res\cancel.bmp" />
+    <None Include="res\CHAT_BUTTON.bmp" />
+    <None Include="res\CheckOff.ico" />
+    <None Include="res\CheckOn.ico" />
+    <None Include="res\CLASS.ico" />
+    <None Include="Res\close.bmp" />
+    <None Include="res\CONNECT.ico" />
+    <None Include="Res\cursor1.cur" />
+    <None Include="res\DEFAULT_USER.bmp" />
+    <None Include="res\DESK1.bmp" />
+    <None Include="res\DESK2.bmp" />
+    <None Include="res\DESK3.bmp" />
+    <None Include="res\DESK4.bmp" />
+    <None Include="res\DESK5.bmp" />
+    <None Include="res\DESK6.bmp" />
+    <None Include="res\DESK7.bmp" />
+    <None Include="res\DESK8.bmp" />
+    <None Include="res\DESK_EX_2.bmp" />
+    <None Include="res\DESK_EX_3.bmp" />
+    <None Include="res\DESK_EX_4.bmp" />
+    <None Include="res\DESK_EX_5.bmp" />
+    <None Include="res\DESK_EX_6.bmp" />
+    <None Include="res\DESK_EX_7.bmp" />
+    <None Include="res\DESK_EX_8.bmp" />
+    <None Include="Res\di.bmp" />
+    <None Include="res\FIND_MORD.bmp" />
+    <None Include="res\FORUM.ico" />
+    <None Include="Res\Friend.ico" />
+    <None Include="res\GAME_KIND.ico" />
+    <None Include="res\GAME_LINE.ico" />
+    <None Include="res\GamePlace.ico" />
+    <None Include="res\GamePlace.rc2" />
+    <None Include="res\HAND.cur" />
+    <None Include="res\HAWA.ico" />
+    <None Include="res\HIDE_BOTTOM.bmp" />
+    <None Include="res\HIDE_LIST.bmp" />
+    <None Include="res\HIDE_RIGHT.bmp" />
+    <None Include="Res\ico.ico" />
+    <None Include="Res\icon1.ico" />
+    <None Include="res\IDI_LIST_ROOT.ico" />
+    <None Include="Res\jindutiao.bmp" />
+    <None Include="res\LIST_BAO.ico" />
+    <None Include="res\LIST_CAVERN.ico" />
+    <None Include="res\LIST_CHESS.ico" />
+    <None Include="res\LIST_DIG.ico" />
+    <None Include="res\LIST_DOWN.ico" />
+    <None Include="res\LIST_FOURENSIGN.ico" />
+    <None Include="res\LIST_KIND.ico" />
+    <None Include="Res\LIST_KIND2.ico" />
+    <None Include="res\LIST_LINE.ico" />
+    <None Include="res\LIST_POINT.ico" />
+    <None Include="res\LIST_ROOM.ico" />
+    <None Include="Res\LIST_ROOM_LOCK.ico" />
+    <None Include="res\LIST_ROOT.ico" />
+    <None Include="res\LIST_ROOT1.ico" />
+    <None Include="res\LIST_SHOWHAND.ico" />
+    <None Include="res\LIST_SPARROW.ico" />
+    <None Include="res\list_unk.ico" />
+    <None Include="res\LIST_UNKNOW.ico" />
+    <None Include="res\LIST_UPGRADE.ico" />
+    <None Include="res\LOCK.bmp" />
+    <None Include="res\LOGIN_BACK.bmp" />
+    <None Include="res\LOGON.ico" />
+    <None Include="res\logon_bk.bmp" />
+    <None Include="res\NAV_BACK.bmp" />
+    <None Include="res\NO_INSTALL.ico" />
+    <None Include="res\PLACE_ROOT.ico" />
+    <None Include="res\PLACE_TOP.bmp" />
+    <None Include="res\PLACE_TOP_LEFT.bmp" />
+    <None Include="res\PLACE_TOP_RIGHT.bmp" />
+    <None Include="Res\PLAYER.ico" />
+    <None Include="res\POWTER_RED.bmp" />
+    <None Include="res\PROTECT.ico" />
+    <None Include="res\RED.bmp" />
+    <None Include="res\ROOM_BACK.bmp" />
+    <None Include="res\ROOM_BANK.bmp" />
+    <None Include="res\ROOM_BAO.ico" />
+    <None Include="res\ROOM_BAR.bmp" />
+    <None Include="res\Room_bottom.bmp" />
+    <None Include="res\ROOM_BUTTON.bmp" />
+    <None Include="res\ROOM_CAVERN.ico" />
+    <None Include="res\ROOM_CHAT.bmp" />
+    <None Include="res\ROOM_CHESS.ico" />
+    <None Include="res\ROOM_DIG.ico" />
+    <None Include="res\ROOM_DOWN.ico" />
+    <None Include="res\ROOM_FACE.bmp" />
+    <None Include="res\ROOM_FIND.bmp" />
+    <None Include="res\ROOM_FOURENSIGN.ico" />
+    <None Include="res\ROOM_HELP.bmp" />
+    <None Include="res\ROOM_HOR_BAR.bmp" />
+    <None Include="res\ROOM_ICON.ico" />
+    <None Include="res\Room_List_Bar_Bottom.bmp" />
+    <None Include="res\Room_List_Bar_Top.bmp" />
+    <None Include="res\ROOM_MASTER.bmp" />
+    <None Include="res\ROOM_MID.bmp" />
+    <None Include="res\ROOM_POINT.ico" />
+    <None Include="res\ROOM_QUIT.bmp" />
+    <None Include="res\ROOM_RIGHT.bmp" />
+    <None Include="res\Room_Search_Bar.bmp" />
+    <None Include="res\ROOM_SET.bmp" />
+    <None Include="res\ROOM_SET_BOTTON.bmp" />
+    <None Include="res\ROOM_SHOWHAND.ico" />
+    <None Include="res\ROOM_SIT.bmp" />
+    <None Include="res\ROOM_SPARROW.ico" />
+    <None Include="res\ROOM_SPILT.bmp" />
+    <None Include="res\ROOM_UNKNOW.ico" />
+    <None Include="res\ROOM_UPGRADE.ico" />
+    <None Include="res\ROOM_VOR_BAR.bmp" />
+    <None Include="res\s.bmp" />
+    <None Include="Res\scroll.bmp" />
+    <None Include="res\Scrollbar.bmp" />
+    <None Include="res\SHOW_BOTTOM.bmp" />
+    <None Include="res\SHOW_LIST.bmp" />
+    <None Include="res\SHOW_RIGHT.bmp" />
+    <None Include="Res\TechSupport.bmp" />
+    <None Include="res\TO_LEFT.bmp" />
+    <None Include="res\TO_RIGHT.bmp" />
+    <None Include="Res\top.bmp" />
+    <None Include="Res\TREEBMP.bmp" />
+    <None Include="Res\Unknown.ico" />
+    <None Include="res\USER_FIND.bmp" />
+    <None Include="res\USER_FIND_BUTTON.bmp" />
+    <None Include="res\USER_INFO_TOP.bmp" />
+    <None Include="res\VIEW_BLUE.bmp" />
+    <None Include="res\VIEW_BOTTOM.bmp" />
+    <None Include="res\VIEW_BOTTOM_LEFT.bmp" />
+    <None Include="res\VIEW_BOTTOM_RIGHT.bmp" />
+    <None Include="res\VIEW_LEFT.bmp" />
+    <None Include="res\VIEW_RED.bmp" />
+    <None Include="res\VIEW_RIGHT.bmp" />
+    <None Include="res\VIEW_TOP_LEFT.bmp" />
+    <None Include="res\VIEW_TOP_RIGHT.bmp" />
+    <None Include="res\WHITE.bmp" />
+    <None Include="Res\WPGame.ico" />
+    <None Include="res\YELLOW.bmp" />
+    <None Include="Res\三人行.ico" />
+    <None Include="C:\Documents and Settings\Administrator\桌面\桌面\关于我们-.bmp" />
+    <None Include="Res\威尼斯.ico" />
+    <None Include="Res\江西电视台.ico" />
+    <None Include="Res\泊众棋牌.ico" />
+    <None Include="Res\泊众游戏.ico" />
+    <None Include="Res\王牌游戏.ico" />
+    <None Include="Res\白山在线.ico" />
+    <None Include="Res\腾澳.ico" />
+    <None Include="Res\蓝钻.ico" />
+    <None Include="Res\蓝钻1.ico" />
+    <None Include="Res\inetdownload.avi" />
+    <None Include="Res\item.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\ROOM_LOGON.wav" />
+    <None Include="WebDialog.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="参数说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="res\GamePlace.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='内部测试版|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='压缩release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='压缩多开|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='压缩资源版|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='多开|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='无技术支持(资源压缩)|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='无技术支持|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='机器人|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='硬件加速|Win32'">true</ExcludedFromBuild>
+    </CustomBuildStep>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GamePlace.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AfcSocket\AfcSocket.vcxproj">
+      <Project>{b0dce420-58a7-4d4c-9c7d-f956b9deda58}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Resource2003\AFCResDll.vcxproj">
+      <Project>{d32d9cb0-cbc9-4072-bcf0-f000a8616c2f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\UILibrary2003\AFC.vcxproj">
+      <Project>{f904bc73-7164-435c-94ab-a59b59513e65}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\GamePlace.manifest" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GamePlace.rc" _x007B_8856F961-340A-11D0-A96B-00C04FD705A2_x007D_="CExplorer1" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

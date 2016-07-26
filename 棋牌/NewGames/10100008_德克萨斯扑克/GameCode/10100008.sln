@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Client", "Client\client.vcproj", "{C2F3DD5B-F589-428D-8F35-314D2B5A0042}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Server", "Server\Server.vcproj", "{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CloseCard|Win32 = CloseCard|Win32
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		RichDebug|Win32 = RichDebug|Win32
+		SuperConfig|Win32 = SuperConfig|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.CloseCard|Win32.ActiveCfg = CloseCard|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.CloseCard|Win32.Build.0 = CloseCard|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.Release|Win32.ActiveCfg = Release|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.Release|Win32.Build.0 = Release|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.RichDebug|Win32.ActiveCfg = RichDebug|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.RichDebug|Win32.Build.0 = RichDebug|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.SuperConfig|Win32.ActiveCfg = SuperConfig|Win32
+		{C2F3DD5B-F589-428D-8F35-314D2B5A0042}.SuperConfig|Win32.Build.0 = SuperConfig|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.CloseCard|Win32.ActiveCfg = CloseCard|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.CloseCard|Win32.Build.0 = CloseCard|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.Debug|Win32.Build.0 = Debug|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.Release|Win32.ActiveCfg = Release|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.Release|Win32.Build.0 = Release|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.RichDebug|Win32.ActiveCfg = RichDebug|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.RichDebug|Win32.Build.0 = RichDebug|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.SuperConfig|Win32.ActiveCfg = SuperConfig|Win32
+		{E3BE93F3-974B-4DFE-9323-AD635A7ABE17}.SuperConfig|Win32.Build.0 = SuperConfig|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

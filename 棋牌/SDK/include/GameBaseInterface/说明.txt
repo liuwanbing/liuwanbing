@@ -1,0 +1,7 @@
+本文件夹专门存放UI二次封装接口，游戏通用逻辑接口
+
+BUI.h/cpp             【UI二次封装库】
+
+BArithmetic.h/cpp     【通用算法库】
+
+BCardLogic.h/cpp      【牌类逻辑基类】                                             

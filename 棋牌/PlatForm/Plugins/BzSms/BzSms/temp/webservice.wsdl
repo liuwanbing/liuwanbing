@@ -1,0 +1,4199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SendSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMS_R">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMS_RResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMS_RResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSExResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSEx_R">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SendSMSEx_RResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SendSMSEx_RResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRegister">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UnRegisterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UnRegisterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargUp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardno" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="cardpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ChargUpResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ChargUpResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetBalanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetBalanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPPwd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="newpwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPPwdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UDPPwdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPSIGN">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sign" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPSIGNResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UDPSIGNResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPSIGNEX">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sign" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UDPSIGNEXResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UDPSIGNEXResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMS">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMSResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RECSMSResult" type="tns:ArrayOfMOBody" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfMOBody">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="MOBody" nillable="true" type="tns:MOBody" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="MOBody">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="total_num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="this_num" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recvtel" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="sender" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="recdate" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RECSMSEx">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMSExResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RECSMSExResult" type="tns:ArrayOfMOBody" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMS_UTF8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMS_UTF8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RECSMS_UTF8Result" type="tns:ArrayOfMOBody" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMSEx_UTF8">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="subcode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RECSMSEx_UTF8Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RECSMSEx_UTF8Result" type="tns:ArrayOfMOBody" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Register">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="province" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="city" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trade" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="entname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="linkman" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="postcode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sign" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegisterResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RegisterResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlag">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlagResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFlagResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SMSTest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SMSTestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SMSTestResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="type" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="TestCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TestCodeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllInfoResult" type="tns:RegistryInfo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RegistryInfo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RESULT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYCODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVICECODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BALANCE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATEDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYSTATEID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRIORITY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIRSTREGISTRYDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AGENTID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRODUCTNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESTMOBILE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FLAG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REPLYCONTENT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISRETURN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERSION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GRADE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARENT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUBSIDIARY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ROLES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BALSTATUS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DISCOUNT" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllInfo2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ver" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="oem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllInfo2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllInfo2Result" type="tns:RegistryInfo2" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="RegistryInfo2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="RESULT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYCODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SERVICECODE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BALANCE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CREATEDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYSTATEID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRIORITY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FIRSTREGISTRYDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REGISTRYDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AGENTID" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PRODUCTNAME" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DESTMOBILE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="FLAG" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="REPLYCONTENT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ISRETURN" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="VERSION" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GRADE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PARENT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SUBSIDIARY" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="ROLES" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="BALSTATUS" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DISCOUNT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SLIST" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="POPM" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="UPDATE" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="MMS" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SetGaoDuan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="gd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SetGaoDuanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SetGaoDuanResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGaoDuan">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGaoDuanResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetGaoDuanResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdSmsSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_u">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_uResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdSmsSend_uResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_DES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_DESResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdSmsSend_DESResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_AES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdSmsSend_AESResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdSmsSend_AESResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="moResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="moResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mo2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mo2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mo2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="report">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxid" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="reportResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="reportResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="report2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxid" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="report2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="report2Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="report2DES">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxid" type="s:long" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="report2DESResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="report2DESResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="msgid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="msgidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="msgidResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="balance">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="balanceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="balanceResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gxmt">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ext" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="gxmtResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="gxmtResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fileMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fname" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="sort" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="total" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ftype" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fileMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fileMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mmsFileMT">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="rrid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mmsFileMTResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mmsFileMTResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdMmsSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsSendF">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsSendFResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdMmsSendFResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdAudioSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="txt" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcnumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdAudioSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdAudioSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdFaxSend">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="content" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="srcnumber" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="stime" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdFaxSendResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdFaxSendResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsReceive">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sn" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pwd" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="mdMmsReceiveResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="mdMmsReceiveResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="ArrayOfMOBody" nillable="true" type="tns:ArrayOfMOBody" />
+      <s:element name="RegistryInfo" nillable="true" type="tns:RegistryInfo" />
+      <s:element name="RegistryInfo2" nillable="true" type="tns:RegistryInfo2" />
+      <s:element name="double" type="s:double" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SendSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMS_R" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMS_RResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSEx" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSExResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RSoapIn">
+    <wsdl:part name="parameters" element="tns:SendSMSEx_R" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RSoapOut">
+    <wsdl:part name="parameters" element="tns:SendSMSEx_RResponse" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:UnRegister" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:UnRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpSoapIn">
+    <wsdl:part name="parameters" element="tns:ChargUp" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpSoapOut">
+    <wsdl:part name="parameters" element="tns:ChargUpResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetBalance" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetBalanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStatus" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCode" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdSoapIn">
+    <wsdl:part name="parameters" element="tns:UDPPwd" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdSoapOut">
+    <wsdl:part name="parameters" element="tns:UDPPwdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNSoapIn">
+    <wsdl:part name="parameters" element="tns:UDPSIGN" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNSoapOut">
+    <wsdl:part name="parameters" element="tns:UDPSIGNResponse" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXSoapIn">
+    <wsdl:part name="parameters" element="tns:UDPSIGNEX" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXSoapOut">
+    <wsdl:part name="parameters" element="tns:UDPSIGNEXResponse" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSSoapIn">
+    <wsdl:part name="parameters" element="tns:RECSMS" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSSoapOut">
+    <wsdl:part name="parameters" element="tns:RECSMSResponse" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExSoapIn">
+    <wsdl:part name="parameters" element="tns:RECSMSEx" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExSoapOut">
+    <wsdl:part name="parameters" element="tns:RECSMSExResponse" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8SoapIn">
+    <wsdl:part name="parameters" element="tns:RECSMS_UTF8" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8SoapOut">
+    <wsdl:part name="parameters" element="tns:RECSMS_UTF8Response" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8SoapIn">
+    <wsdl:part name="parameters" element="tns:RECSMSEx_UTF8" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8SoapOut">
+    <wsdl:part name="parameters" element="tns:RECSMSEx_UTF8Response" />
+  </wsdl:message>
+  <wsdl:message name="RegisterSoapIn">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="RegisterSoapOut">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFlag" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFlagResponse" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestSoapIn">
+    <wsdl:part name="parameters" element="tns:SMSTest" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestSoapOut">
+    <wsdl:part name="parameters" element="tns:SMSTestResponse" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:TestCode" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:TestCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2SoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllInfo2" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2SoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllInfo2Response" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanSoapIn">
+    <wsdl:part name="parameters" element="tns:SetGaoDuan" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanSoapOut">
+    <wsdl:part name="parameters" element="tns:SetGaoDuanResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGaoDuan" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGaoDuanResponse" />
+  </wsdl:message>
+  <wsdl:message name="mtSoapIn">
+    <wsdl:part name="parameters" element="tns:mt" />
+  </wsdl:message>
+  <wsdl:message name="mtSoapOut">
+    <wsdl:part name="parameters" element="tns:mtResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendSoapIn">
+    <wsdl:part name="parameters" element="tns:mdSmsSend" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendSoapOut">
+    <wsdl:part name="parameters" element="tns:mdSmsSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uSoapIn">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_u" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uSoapOut">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_uResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESSoapIn">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_DES" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESSoapOut">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_DESResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESSoapIn">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_AES" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESSoapOut">
+    <wsdl:part name="parameters" element="tns:mdSmsSend_AESResponse" />
+  </wsdl:message>
+  <wsdl:message name="moSoapIn">
+    <wsdl:part name="parameters" element="tns:mo" />
+  </wsdl:message>
+  <wsdl:message name="moSoapOut">
+    <wsdl:part name="parameters" element="tns:moResponse" />
+  </wsdl:message>
+  <wsdl:message name="mo2SoapIn">
+    <wsdl:part name="parameters" element="tns:mo2" />
+  </wsdl:message>
+  <wsdl:message name="mo2SoapOut">
+    <wsdl:part name="parameters" element="tns:mo2Response" />
+  </wsdl:message>
+  <wsdl:message name="reportSoapIn">
+    <wsdl:part name="parameters" element="tns:report" />
+  </wsdl:message>
+  <wsdl:message name="reportSoapOut">
+    <wsdl:part name="parameters" element="tns:reportResponse" />
+  </wsdl:message>
+  <wsdl:message name="report2SoapIn">
+    <wsdl:part name="parameters" element="tns:report2" />
+  </wsdl:message>
+  <wsdl:message name="report2SoapOut">
+    <wsdl:part name="parameters" element="tns:report2Response" />
+  </wsdl:message>
+  <wsdl:message name="report2DESSoapIn">
+    <wsdl:part name="parameters" element="tns:report2DES" />
+  </wsdl:message>
+  <wsdl:message name="report2DESSoapOut">
+    <wsdl:part name="parameters" element="tns:report2DESResponse" />
+  </wsdl:message>
+  <wsdl:message name="msgidSoapIn">
+    <wsdl:part name="parameters" element="tns:msgid" />
+  </wsdl:message>
+  <wsdl:message name="msgidSoapOut">
+    <wsdl:part name="parameters" element="tns:msgidResponse" />
+  </wsdl:message>
+  <wsdl:message name="balanceSoapIn">
+    <wsdl:part name="parameters" element="tns:balance" />
+  </wsdl:message>
+  <wsdl:message name="balanceSoapOut">
+    <wsdl:part name="parameters" element="tns:balanceResponse" />
+  </wsdl:message>
+  <wsdl:message name="gxmtSoapIn">
+    <wsdl:part name="parameters" element="tns:gxmt" />
+  </wsdl:message>
+  <wsdl:message name="gxmtSoapOut">
+    <wsdl:part name="parameters" element="tns:gxmtResponse" />
+  </wsdl:message>
+  <wsdl:message name="fileMTSoapIn">
+    <wsdl:part name="parameters" element="tns:fileMT" />
+  </wsdl:message>
+  <wsdl:message name="fileMTSoapOut">
+    <wsdl:part name="parameters" element="tns:fileMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTSoapIn">
+    <wsdl:part name="parameters" element="tns:mmsFileMT" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTSoapOut">
+    <wsdl:part name="parameters" element="tns:mmsFileMTResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendSoapIn">
+    <wsdl:part name="parameters" element="tns:mdMmsSend" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendSoapOut">
+    <wsdl:part name="parameters" element="tns:mdMmsSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFSoapIn">
+    <wsdl:part name="parameters" element="tns:mdMmsSendF" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFSoapOut">
+    <wsdl:part name="parameters" element="tns:mdMmsSendFResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendSoapIn">
+    <wsdl:part name="parameters" element="tns:mdAudioSend" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendSoapOut">
+    <wsdl:part name="parameters" element="tns:mdAudioSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendSoapIn">
+    <wsdl:part name="parameters" element="tns:mdFaxSend" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendSoapOut">
+    <wsdl:part name="parameters" element="tns:mdFaxSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveSoapIn">
+    <wsdl:part name="parameters" element="tns:mdMmsReceive" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveSoapOut">
+    <wsdl:part name="parameters" element="tns:mdMmsReceiveResponse" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="cardno" type="s:string" />
+    <wsdl:part name="cardpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="newpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+    <wsdl:part name="comName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8HttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8HttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8HttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8HttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="province" type="s:string" />
+    <wsdl:part name="city" type="s:string" />
+    <wsdl:part name="trade" type="s:string" />
+    <wsdl:part name="entname" type="s:string" />
+    <wsdl:part name="linkman" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="fax" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="postcode" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeHttpGetIn">
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:RegistryInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2HttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="ver" type="s:string" />
+    <wsdl:part name="oem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2HttpGetOut">
+    <wsdl:part name="Body" element="tns:RegistryInfo2" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="gd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanHttpGetOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mtHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mtHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="moHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="moHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mo2HttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mo2HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="reportHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="reportHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="report2HttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="report2HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="report2DESHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="report2DESHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="msgidHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="msgidHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="balanceHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="balanceHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="gxmtHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="gxmtHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="fileMTHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="fname" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+    <wsdl:part name="sort" type="s:string" />
+    <wsdl:part name="total" type="s:string" />
+    <wsdl:part name="ftype" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fileMTHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="txt" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="srcnumber" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="srcnumber" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveHttpGetIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMS_RHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSExHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SendSMSEx_RHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UnRegisterHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="cardno" type="s:string" />
+    <wsdl:part name="cardpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ChargUpHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetBalanceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStatusHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="newpwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPPwdHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+    <wsdl:part name="comName" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UDPSIGNEXHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSExHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8HttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMS_UTF8HttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8HttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="subcode" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RECSMSEx_UTF8HttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfMOBody" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="province" type="s:string" />
+    <wsdl:part name="city" type="s:string" />
+    <wsdl:part name="trade" type="s:string" />
+    <wsdl:part name="entname" type="s:string" />
+    <wsdl:part name="linkman" type="s:string" />
+    <wsdl:part name="phone" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="email" type="s:string" />
+    <wsdl:part name="fax" type="s:string" />
+    <wsdl:part name="address" type="s:string" />
+    <wsdl:part name="postcode" type="s:string" />
+    <wsdl:part name="sign" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="RegisterHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlagHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SMSTestHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeHttpPostIn">
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="type" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="TestCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:RegistryInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2HttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="ver" type="s:string" />
+    <wsdl:part name="oem" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAllInfo2HttpPostOut">
+    <wsdl:part name="Body" element="tns:RegistryInfo2" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="gd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SetGaoDuanHttpPostOut">
+    <wsdl:part name="Body" element="tns:double" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetGaoDuanHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mtHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mtHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_uHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_DESHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdSmsSend_AESHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="moHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="moHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mo2HttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mo2HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="reportHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="reportHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="report2HttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="report2HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="report2DESHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="maxid" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="report2DESHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="msgidHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="msgidHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="balanceHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="balanceHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="gxmtHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="ext" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="gxmtHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="fileMTHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="fname" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+    <wsdl:part name="sort" type="s:string" />
+    <wsdl:part name="total" type="s:string" />
+    <wsdl:part name="ftype" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="fileMTHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="rrid" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mmsFileMTHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsSendFHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="txt" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="srcnumber" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdAudioSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+    <wsdl:part name="title" type="s:string" />
+    <wsdl:part name="mobile" type="s:string" />
+    <wsdl:part name="content" type="s:string" />
+    <wsdl:part name="srcnumber" type="s:string" />
+    <wsdl:part name="stime" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdFaxSendHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveHttpPostIn">
+    <wsdl:part name="sn" type="s:string" />
+    <wsdl:part name="pwd" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="mdMmsReceiveHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="WebServiceSoap">
+    <wsdl:operation name="SendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSSoapIn" />
+      <wsdl:output message="tns:SendSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMS_RSoapIn" />
+      <wsdl:output message="tns:SendSMS_RSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSExSoapIn" />
+      <wsdl:output message="tns:SendSMSExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSEx_RSoapIn" />
+      <wsdl:output message="tns:SendSMSEx_RSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:UnRegisterSoapIn" />
+      <wsdl:output message="tns:UnRegisterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">充值：sn软件序列号;pwd序列号密码;cardno充值卡号;cardpwd充值卡密码</wsdl:documentation>
+      <wsdl:input message="tns:ChargUpSoapIn" />
+      <wsdl:output message="tns:ChargUpSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取余额：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetBalanceSoapIn" />
+      <wsdl:output message="tns:GetBalanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号状态：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusSoapIn" />
+      <wsdl:output message="tns:GetStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取特服号：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetCodeSoapIn" />
+      <wsdl:output message="tns:GetCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改密码：sn软件序列号;pwd序列号密码;newpwd新密码</wsdl:documentation>
+      <wsdl:input message="tns:UDPPwdSoapIn" />
+      <wsdl:output message="tns:UDPPwdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符)</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNSoapIn" />
+      <wsdl:output message="tns:UDPSIGNSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名（网络版）：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符);subcode最长9位数字扩展码;comName企业全称</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNEXSoapIn" />
+      <wsdl:output message="tns:UDPSIGNEXSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSSoapIn" />
+      <wsdl:output message="tns:RECSMSSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSExSoapIn" />
+      <wsdl:output message="tns:RECSMSExSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信utf-8编码：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMS_UTF8SoapIn" />
+      <wsdl:output message="tns:RECSMS_UTF8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信utf-8编码：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSEx_UTF8SoapIn" />
+      <wsdl:output message="tns:RECSMSEx_UTF8SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">软件序列号注册：sn软件序列号;pwd序列号密码;province省;city城市;trade行业;entname企业名称;linkman联系人;phone联系电话;mobile移动电话;email邮件地址;fax传真;address地址;postcode邮政编码</wsdl:documentation>
+      <wsdl:input message="tns:RegisterSoapIn" />
+      <wsdl:output message="tns:RegisterSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号子号码长度：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagSoapIn" />
+      <wsdl:output message="tns:GetFlagSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通道测试：sn软件序列号;pwd序列号密码;mobile手机号列表，最多20个，以逗号,隔开</wsdl:documentation>
+      <wsdl:input message="tns:SMSTestSoapIn" />
+      <wsdl:output message="tns:SMSTestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">编解码：content中文内容;code编解码类型;type，0编码1解码</wsdl:documentation>
+      <wsdl:input message="tns:TestCodeSoapIn" />
+      <wsdl:output message="tns:TestCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfoSoapIn" />
+      <wsdl:output message="tns:GetAllInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号2参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfo2SoapIn" />
+      <wsdl:output message="tns:GetAllInfo2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设置高端发送：sn软件序列号;pwd序列号密码;gd参数1普通通道2高端通道;</wsdl:documentation>
+      <wsdl:input message="tns:SetGaoDuanSoapIn" />
+      <wsdl:output message="tns:SetGaoDuanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取高端发送：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetGaoDuanSoapIn" />
+      <wsdl:output message="tns:GetGaoDuanSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mtSoapIn" />
+      <wsdl:output message="tns:mtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSendSoapIn" />
+      <wsdl:output message="tns:mdSmsSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_uSoapIn" />
+      <wsdl:output message="tns:mdSmsSend_uSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_DESSoapIn" />
+      <wsdl:output message="tns:mdSmsSend_DESSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_AESSoapIn" />
+      <wsdl:output message="tns:mdSmsSend_AESSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password).[优先使用本接口]</wsdl:documentation>
+      <wsdl:input message="tns:moSoapIn" />
+      <wsdl:output message="tns:moSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password);maxID：上次接收最大id</wsdl:documentation>
+      <wsdl:input message="tns:mo2SoapIn" />
+      <wsdl:output message="tns:mo2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:reportSoapIn" />
+      <wsdl:output message="tns:reportSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2SoapIn" />
+      <wsdl:output message="tns:report2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2DESSoapIn" />
+      <wsdl:output message="tns:report2DESSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取信息ID：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:msgidSoapIn" />
+      <wsdl:output message="tns:msgidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询余额：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:balanceSoapIn" />
+      <wsdl:output message="tns:balanceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">个性短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容,GB2312编码,以逗号,隔开;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:gxmtSoapIn" />
+      <wsdl:output message="tns:gxmtSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">文件传输：sn软件序列号;pwd加密密码md5(sn+password);fname增值文件名;rrid第一个接口返回id;sort批次;total总次数;ftype类别1短信2彩信3语音4传真5邮件;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:fileMTSoapIn" />
+      <wsdl:output message="tns:fileMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信文件传输：sn软件序列号;pwd加密密码md5(sn+password);rrid第一个接口返回id;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mmsFileMTSoapIn" />
+      <wsdl:output message="tns:mmsFileMTSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);title彩信主题;mobile手机号码,以英文逗号隔开;content内容,base64编码(文件名1,文件base64编码串;文件名2,文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendSoapIn" />
+      <wsdl:output message="tns:mdMmsSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号码,以英文逗号隔开;content内容,base64编码(zip文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendFSoapIn" />
+      <wsdl:output message="tns:mdMmsSendFSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">语音发送：sn软件序列号;pwd加密密码md5(sn+password);title语音主题;mobile手机号码,以英文逗号隔开,为空表示语音合成请求;txt文本内容;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber源号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdAudioSendSoapIn" />
+      <wsdl:output message="tns:mdAudioSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">传真发送：sn软件序列号;pwd加密密码md5(sn+password);title传真主题;mobile接收号码,以英文逗号隔开;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber发送号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdFaxSendSoapIn" />
+      <wsdl:output message="tns:mdFaxSendSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信接收：sn软件序列号;pwd加密密码md5(sn+password).返回:彩信内容</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsReceiveSoapIn" />
+      <wsdl:output message="tns:mdMmsReceiveSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpGet">
+    <wsdl:operation name="SendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSHttpGetIn" />
+      <wsdl:output message="tns:SendSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMS_RHttpGetIn" />
+      <wsdl:output message="tns:SendSMS_RHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSExHttpGetIn" />
+      <wsdl:output message="tns:SendSMSExHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSEx_RHttpGetIn" />
+      <wsdl:output message="tns:SendSMSEx_RHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:UnRegisterHttpGetIn" />
+      <wsdl:output message="tns:UnRegisterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">充值：sn软件序列号;pwd序列号密码;cardno充值卡号;cardpwd充值卡密码</wsdl:documentation>
+      <wsdl:input message="tns:ChargUpHttpGetIn" />
+      <wsdl:output message="tns:ChargUpHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取余额：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetBalanceHttpGetIn" />
+      <wsdl:output message="tns:GetBalanceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号状态：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusHttpGetIn" />
+      <wsdl:output message="tns:GetStatusHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取特服号：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetCodeHttpGetIn" />
+      <wsdl:output message="tns:GetCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改密码：sn软件序列号;pwd序列号密码;newpwd新密码</wsdl:documentation>
+      <wsdl:input message="tns:UDPPwdHttpGetIn" />
+      <wsdl:output message="tns:UDPPwdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符)</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNHttpGetIn" />
+      <wsdl:output message="tns:UDPSIGNHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名（网络版）：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符);subcode最长9位数字扩展码;comName企业全称</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNEXHttpGetIn" />
+      <wsdl:output message="tns:UDPSIGNEXHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSHttpGetIn" />
+      <wsdl:output message="tns:RECSMSHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSExHttpGetIn" />
+      <wsdl:output message="tns:RECSMSExHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信utf-8编码：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMS_UTF8HttpGetIn" />
+      <wsdl:output message="tns:RECSMS_UTF8HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信utf-8编码：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSEx_UTF8HttpGetIn" />
+      <wsdl:output message="tns:RECSMSEx_UTF8HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">软件序列号注册：sn软件序列号;pwd序列号密码;province省;city城市;trade行业;entname企业名称;linkman联系人;phone联系电话;mobile移动电话;email邮件地址;fax传真;address地址;postcode邮政编码</wsdl:documentation>
+      <wsdl:input message="tns:RegisterHttpGetIn" />
+      <wsdl:output message="tns:RegisterHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号子号码长度：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagHttpGetIn" />
+      <wsdl:output message="tns:GetFlagHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通道测试：sn软件序列号;pwd序列号密码;mobile手机号列表，最多20个，以逗号,隔开</wsdl:documentation>
+      <wsdl:input message="tns:SMSTestHttpGetIn" />
+      <wsdl:output message="tns:SMSTestHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">编解码：content中文内容;code编解码类型;type，0编码1解码</wsdl:documentation>
+      <wsdl:input message="tns:TestCodeHttpGetIn" />
+      <wsdl:output message="tns:TestCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfoHttpGetIn" />
+      <wsdl:output message="tns:GetAllInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号2参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfo2HttpGetIn" />
+      <wsdl:output message="tns:GetAllInfo2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设置高端发送：sn软件序列号;pwd序列号密码;gd参数1普通通道2高端通道;</wsdl:documentation>
+      <wsdl:input message="tns:SetGaoDuanHttpGetIn" />
+      <wsdl:output message="tns:SetGaoDuanHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取高端发送：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetGaoDuanHttpGetIn" />
+      <wsdl:output message="tns:GetGaoDuanHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mtHttpGetIn" />
+      <wsdl:output message="tns:mtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSendHttpGetIn" />
+      <wsdl:output message="tns:mdSmsSendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_uHttpGetIn" />
+      <wsdl:output message="tns:mdSmsSend_uHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_DESHttpGetIn" />
+      <wsdl:output message="tns:mdSmsSend_DESHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_AESHttpGetIn" />
+      <wsdl:output message="tns:mdSmsSend_AESHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password).[优先使用本接口]</wsdl:documentation>
+      <wsdl:input message="tns:moHttpGetIn" />
+      <wsdl:output message="tns:moHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password);maxID：上次接收最大id</wsdl:documentation>
+      <wsdl:input message="tns:mo2HttpGetIn" />
+      <wsdl:output message="tns:mo2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:reportHttpGetIn" />
+      <wsdl:output message="tns:reportHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2HttpGetIn" />
+      <wsdl:output message="tns:report2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2DESHttpGetIn" />
+      <wsdl:output message="tns:report2DESHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取信息ID：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:msgidHttpGetIn" />
+      <wsdl:output message="tns:msgidHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询余额：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:balanceHttpGetIn" />
+      <wsdl:output message="tns:balanceHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">个性短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容,GB2312编码,以逗号,隔开;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:gxmtHttpGetIn" />
+      <wsdl:output message="tns:gxmtHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">文件传输：sn软件序列号;pwd加密密码md5(sn+password);fname增值文件名;rrid第一个接口返回id;sort批次;total总次数;ftype类别1短信2彩信3语音4传真5邮件;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:fileMTHttpGetIn" />
+      <wsdl:output message="tns:fileMTHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信文件传输：sn软件序列号;pwd加密密码md5(sn+password);rrid第一个接口返回id;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mmsFileMTHttpGetIn" />
+      <wsdl:output message="tns:mmsFileMTHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);title彩信主题;mobile手机号码,以英文逗号隔开;content内容,base64编码(文件名1,文件base64编码串;文件名2,文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendHttpGetIn" />
+      <wsdl:output message="tns:mdMmsSendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号码,以英文逗号隔开;content内容,base64编码(zip文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendFHttpGetIn" />
+      <wsdl:output message="tns:mdMmsSendFHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">语音发送：sn软件序列号;pwd加密密码md5(sn+password);title语音主题;mobile手机号码,以英文逗号隔开,为空表示语音合成请求;txt文本内容;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber源号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdAudioSendHttpGetIn" />
+      <wsdl:output message="tns:mdAudioSendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">传真发送：sn软件序列号;pwd加密密码md5(sn+password);title传真主题;mobile接收号码,以英文逗号隔开;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber发送号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdFaxSendHttpGetIn" />
+      <wsdl:output message="tns:mdFaxSendHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信接收：sn软件序列号;pwd加密密码md5(sn+password).返回:彩信内容</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsReceiveHttpGetIn" />
+      <wsdl:output message="tns:mdMmsReceiveHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="WebServiceHttpPost">
+    <wsdl:operation name="SendSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSHttpPostIn" />
+      <wsdl:output message="tns:SendSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMS_RHttpPostIn" />
+      <wsdl:output message="tns:SendSMS_RHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSExHttpPostIn" />
+      <wsdl:output message="tns:SendSMSExHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信（可扩展）：sn软件序列号;pwd序列号密码;mobile手机号列表，以逗号,隔开;content发送内容;subcode最长9位数字扩展码;rrid唯一标识,全数字</wsdl:documentation>
+      <wsdl:input message="tns:SendSMSEx_RHttpPostIn" />
+      <wsdl:output message="tns:SendSMSEx_RHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">注销：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:UnRegisterHttpPostIn" />
+      <wsdl:output message="tns:UnRegisterHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">充值：sn软件序列号;pwd序列号密码;cardno充值卡号;cardpwd充值卡密码</wsdl:documentation>
+      <wsdl:input message="tns:ChargUpHttpPostIn" />
+      <wsdl:output message="tns:ChargUpHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取余额：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetBalanceHttpPostIn" />
+      <wsdl:output message="tns:GetBalanceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号状态：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetStatusHttpPostIn" />
+      <wsdl:output message="tns:GetStatusHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取特服号：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetCodeHttpPostIn" />
+      <wsdl:output message="tns:GetCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改密码：sn软件序列号;pwd序列号密码;newpwd新密码</wsdl:documentation>
+      <wsdl:input message="tns:UDPPwdHttpPostIn" />
+      <wsdl:output message="tns:UDPPwdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符)</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNHttpPostIn" />
+      <wsdl:output message="tns:UDPSIGNHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">更改签名（网络版）：sn软件序列号;pwd序列号密码;sign企业签名(2-15个字符);subcode最长9位数字扩展码;comName企业全称</wsdl:documentation>
+      <wsdl:input message="tns:UDPSIGNEXHttpPostIn" />
+      <wsdl:output message="tns:UDPSIGNEXHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSHttpPostIn" />
+      <wsdl:output message="tns:RECSMSHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSExHttpPostIn" />
+      <wsdl:output message="tns:RECSMSExHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信utf-8编码：sn软件序列号;pwd序列号密码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMS_UTF8HttpPostIn" />
+      <wsdl:output message="tns:RECSMS_UTF8HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">网络版接收短信utf-8编码：sn软件序列号;pwd序列号密码;subcode子号码。total_num为负数，表示操作失败</wsdl:documentation>
+      <wsdl:input message="tns:RECSMSEx_UTF8HttpPostIn" />
+      <wsdl:output message="tns:RECSMSEx_UTF8HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">软件序列号注册：sn软件序列号;pwd序列号密码;province省;city城市;trade行业;entname企业名称;linkman联系人;phone联系电话;mobile移动电话;email邮件地址;fax传真;address地址;postcode邮政编码</wsdl:documentation>
+      <wsdl:input message="tns:RegisterHttpPostIn" />
+      <wsdl:output message="tns:RegisterHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号子号码长度：sn软件序列号;pwd序列号密码</wsdl:documentation>
+      <wsdl:input message="tns:GetFlagHttpPostIn" />
+      <wsdl:output message="tns:GetFlagHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">通道测试：sn软件序列号;pwd序列号密码;mobile手机号列表，最多20个，以逗号,隔开</wsdl:documentation>
+      <wsdl:input message="tns:SMSTestHttpPostIn" />
+      <wsdl:output message="tns:SMSTestHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">编解码：content中文内容;code编解码类型;type，0编码1解码</wsdl:documentation>
+      <wsdl:input message="tns:TestCodeHttpPostIn" />
+      <wsdl:output message="tns:TestCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfoHttpPostIn" />
+      <wsdl:output message="tns:GetAllInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取软件序列号2参数：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetAllInfo2HttpPostIn" />
+      <wsdl:output message="tns:GetAllInfo2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">设置高端发送：sn软件序列号;pwd序列号密码;gd参数1普通通道2高端通道;</wsdl:documentation>
+      <wsdl:input message="tns:SetGaoDuanHttpPostIn" />
+      <wsdl:output message="tns:SetGaoDuanHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取高端发送：sn软件序列号;pwd序列号密码;</wsdl:documentation>
+      <wsdl:input message="tns:GetGaoDuanHttpPostIn" />
+      <wsdl:output message="tns:GetGaoDuanHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mtHttpPostIn" />
+      <wsdl:output message="tns:mtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSendHttpPostIn" />
+      <wsdl:output message="tns:mdSmsSendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_uHttpPostIn" />
+      <wsdl:output message="tns:mdSmsSend_uHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_DESHttpPostIn" />
+      <wsdl:output message="tns:mdSmsSend_DESHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">发送短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容utf-8编码;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:mdSmsSend_AESHttpPostIn" />
+      <wsdl:output message="tns:mdSmsSend_AESHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password).[优先使用本接口]</wsdl:documentation>
+      <wsdl:input message="tns:moHttpPostIn" />
+      <wsdl:output message="tns:moHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">接收短信：sn软件序列号;pwd加密密码md5(sn+password);maxID：上次接收最大id</wsdl:documentation>
+      <wsdl:input message="tns:mo2HttpPostIn" />
+      <wsdl:output message="tns:mo2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:reportHttpPostIn" />
+      <wsdl:output message="tns:reportHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2HttpPostIn" />
+      <wsdl:output message="tns:report2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">回执：sn软件序列号;pwd加密密码md5(sn+password);maxid最大id</wsdl:documentation>
+      <wsdl:input message="tns:report2DESHttpPostIn" />
+      <wsdl:output message="tns:report2DESHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">获取信息ID：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:msgidHttpPostIn" />
+      <wsdl:output message="tns:msgidHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">查询余额：sn软件序列号;pwd加密密码md5(sn+password)</wsdl:documentation>
+      <wsdl:input message="tns:balanceHttpPostIn" />
+      <wsdl:output message="tns:balanceHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">个性短信：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号列表，以逗号,隔开;content发送内容,GB2312编码,以逗号,隔开;ext扩展子号;stime定时时间,格式如2009-09-01 18:21:00;rrid唯一标识,全数字.返回:唯一标识</wsdl:documentation>
+      <wsdl:input message="tns:gxmtHttpPostIn" />
+      <wsdl:output message="tns:gxmtHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">文件传输：sn软件序列号;pwd加密密码md5(sn+password);fname增值文件名;rrid第一个接口返回id;sort批次;total总次数;ftype类别1短信2彩信3语音4传真5邮件;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:fileMTHttpPostIn" />
+      <wsdl:output message="tns:fileMTHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信文件传输：sn软件序列号;pwd加密密码md5(sn+password);rrid第一个接口返回id;content内容,base64编码.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mmsFileMTHttpPostIn" />
+      <wsdl:output message="tns:mmsFileMTHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);title彩信主题;mobile手机号码,以英文逗号隔开;content内容,base64编码(文件名1,文件base64编码串;文件名2,文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendHttpPostIn" />
+      <wsdl:output message="tns:mdMmsSendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信发送：sn软件序列号;pwd加密密码md5(sn+password);mobile手机号码,以英文逗号隔开;content内容,base64编码(zip文件base64编码串);stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsSendFHttpPostIn" />
+      <wsdl:output message="tns:mdMmsSendFHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">语音发送：sn软件序列号;pwd加密密码md5(sn+password);title语音主题;mobile手机号码,以英文逗号隔开,为空表示语音合成请求;txt文本内容;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber源号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdAudioSendHttpPostIn" />
+      <wsdl:output message="tns:mdAudioSendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">传真发送：sn软件序列号;pwd加密密码md5(sn+password);title传真主题;mobile接收号码,以英文逗号隔开;content文件内容,base64编码(wav文件名,文件base64编码串);srcnumber发送号码;stime定时时间2010-07-05 17:37:00.返回:rrid</wsdl:documentation>
+      <wsdl:input message="tns:mdFaxSendHttpPostIn" />
+      <wsdl:output message="tns:mdFaxSendHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">彩信接收：sn软件序列号;pwd加密密码md5(sn+password).返回:彩信内容</wsdl:documentation>
+      <wsdl:input message="tns:mdMmsReceiveHttpPostIn" />
+      <wsdl:output message="tns:mdMmsReceiveHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebServiceSoap" type="tns:WebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSMS">
+      <soap:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <soap:operation soapAction="http://tempuri.org/SendSMS_R" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <soap:operation soapAction="http://tempuri.org/SendSMSEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <soap:operation soapAction="http://tempuri.org/SendSMSEx_R" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <soap:operation soapAction="http://tempuri.org/UnRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <soap:operation soapAction="http://tempuri.org/ChargUp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <soap:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap:operation soapAction="http://tempuri.org/GetStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <soap:operation soapAction="http://tempuri.org/GetCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <soap:operation soapAction="http://tempuri.org/UDPPwd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <soap:operation soapAction="http://tempuri.org/UDPSIGN" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <soap:operation soapAction="http://tempuri.org/UDPSIGNEX" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <soap:operation soapAction="http://tempuri.org/RECSMS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <soap:operation soapAction="http://tempuri.org/RECSMSEx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <soap:operation soapAction="http://tempuri.org/RECSMS_UTF8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <soap:operation soapAction="http://tempuri.org/RECSMSEx_UTF8" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <soap:operation soapAction="http://tempuri.org/GetFlag" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <soap:operation soapAction="http://tempuri.org/SMSTest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <soap:operation soapAction="http://tempuri.org/TestCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <soap:operation soapAction="http://tempuri.org/GetAllInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <soap:operation soapAction="http://tempuri.org/GetAllInfo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <soap:operation soapAction="http://tempuri.org/SetGaoDuan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <soap:operation soapAction="http://tempuri.org/GetGaoDuan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <soap:operation soapAction="http://tempuri.org/mt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <soap:operation soapAction="http://tempuri.org/mdSmsSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <soap:operation soapAction="http://tempuri.org/mdSmsSend_u" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <soap:operation soapAction="http://tempuri.org/mdSmsSend_DES" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <soap:operation soapAction="http://tempuri.org/mdSmsSend_AES" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <soap:operation soapAction="http://tempuri.org/mo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <soap:operation soapAction="http://tempuri.org/mo2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <soap:operation soapAction="http://tempuri.org/report" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <soap:operation soapAction="http://tempuri.org/report2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <soap:operation soapAction="http://tempuri.org/report2DES" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <soap:operation soapAction="http://tempuri.org/msgid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <soap:operation soapAction="http://tempuri.org/balance" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <soap:operation soapAction="http://tempuri.org/gxmt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <soap:operation soapAction="http://tempuri.org/fileMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <soap:operation soapAction="http://tempuri.org/mmsFileMT" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <soap:operation soapAction="http://tempuri.org/mdMmsSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <soap:operation soapAction="http://tempuri.org/mdMmsSendF" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <soap:operation soapAction="http://tempuri.org/mdAudioSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <soap:operation soapAction="http://tempuri.org/mdFaxSend" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <soap:operation soapAction="http://tempuri.org/mdMmsReceive" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceSoap12" type="tns:WebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SendSMS">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <soap12:operation soapAction="http://tempuri.org/SendSMS_R" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <soap12:operation soapAction="http://tempuri.org/SendSMSEx_R" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <soap12:operation soapAction="http://tempuri.org/UnRegister" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <soap12:operation soapAction="http://tempuri.org/ChargUp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <soap12:operation soapAction="http://tempuri.org/GetBalance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <soap12:operation soapAction="http://tempuri.org/GetStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <soap12:operation soapAction="http://tempuri.org/GetCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <soap12:operation soapAction="http://tempuri.org/UDPPwd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <soap12:operation soapAction="http://tempuri.org/UDPSIGN" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <soap12:operation soapAction="http://tempuri.org/UDPSIGNEX" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <soap12:operation soapAction="http://tempuri.org/RECSMS" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <soap12:operation soapAction="http://tempuri.org/RECSMSEx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <soap12:operation soapAction="http://tempuri.org/RECSMS_UTF8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <soap12:operation soapAction="http://tempuri.org/RECSMSEx_UTF8" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap12:operation soapAction="http://tempuri.org/Register" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <soap12:operation soapAction="http://tempuri.org/GetFlag" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <soap12:operation soapAction="http://tempuri.org/SMSTest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <soap12:operation soapAction="http://tempuri.org/TestCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <soap12:operation soapAction="http://tempuri.org/GetAllInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <soap12:operation soapAction="http://tempuri.org/GetAllInfo2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <soap12:operation soapAction="http://tempuri.org/SetGaoDuan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <soap12:operation soapAction="http://tempuri.org/GetGaoDuan" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <soap12:operation soapAction="http://tempuri.org/mt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <soap12:operation soapAction="http://tempuri.org/mdSmsSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <soap12:operation soapAction="http://tempuri.org/mdSmsSend_u" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <soap12:operation soapAction="http://tempuri.org/mdSmsSend_DES" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <soap12:operation soapAction="http://tempuri.org/mdSmsSend_AES" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <soap12:operation soapAction="http://tempuri.org/mo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <soap12:operation soapAction="http://tempuri.org/mo2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <soap12:operation soapAction="http://tempuri.org/report" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <soap12:operation soapAction="http://tempuri.org/report2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <soap12:operation soapAction="http://tempuri.org/report2DES" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <soap12:operation soapAction="http://tempuri.org/msgid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <soap12:operation soapAction="http://tempuri.org/balance" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <soap12:operation soapAction="http://tempuri.org/gxmt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <soap12:operation soapAction="http://tempuri.org/fileMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <soap12:operation soapAction="http://tempuri.org/mmsFileMT" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <soap12:operation soapAction="http://tempuri.org/mdMmsSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <soap12:operation soapAction="http://tempuri.org/mdMmsSendF" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <soap12:operation soapAction="http://tempuri.org/mdAudioSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <soap12:operation soapAction="http://tempuri.org/mdFaxSend" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <soap12:operation soapAction="http://tempuri.org/mdMmsReceive" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpGet" type="tns:WebServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <http:operation location="/SendSMS_R" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <http:operation location="/SendSMSEx" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <http:operation location="/SendSMSEx_R" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <http:operation location="/UnRegister" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <http:operation location="/ChargUp" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <http:operation location="/GetBalance" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <http:operation location="/GetStatus" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <http:operation location="/GetCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <http:operation location="/UDPPwd" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <http:operation location="/UDPSIGN" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <http:operation location="/UDPSIGNEX" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <http:operation location="/RECSMS" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <http:operation location="/RECSMSEx" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <http:operation location="/RECSMS_UTF8" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <http:operation location="/RECSMSEx_UTF8" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <http:operation location="/Register" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <http:operation location="/GetFlag" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <http:operation location="/SMSTest" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <http:operation location="/TestCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <http:operation location="/GetAllInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <http:operation location="/GetAllInfo2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <http:operation location="/SetGaoDuan" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <http:operation location="/GetGaoDuan" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <http:operation location="/mt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <http:operation location="/mdSmsSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <http:operation location="/mdSmsSend_u" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <http:operation location="/mdSmsSend_DES" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <http:operation location="/mdSmsSend_AES" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <http:operation location="/mo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <http:operation location="/mo2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <http:operation location="/report" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <http:operation location="/report2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <http:operation location="/report2DES" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <http:operation location="/msgid" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <http:operation location="/balance" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <http:operation location="/gxmt" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <http:operation location="/fileMT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <http:operation location="/mmsFileMT" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <http:operation location="/mdMmsSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <http:operation location="/mdMmsSendF" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <http:operation location="/mdAudioSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <http:operation location="/mdFaxSend" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <http:operation location="/mdMmsReceive" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebServiceHttpPost" type="tns:WebServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="SendSMS">
+      <http:operation location="/SendSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMS_R">
+      <http:operation location="/SendSMS_R" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx">
+      <http:operation location="/SendSMSEx" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendSMSEx_R">
+      <http:operation location="/SendSMSEx_R" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnRegister">
+      <http:operation location="/UnRegister" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChargUp">
+      <http:operation location="/ChargUp" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetBalance">
+      <http:operation location="/GetBalance" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStatus">
+      <http:operation location="/GetStatus" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCode">
+      <http:operation location="/GetCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPPwd">
+      <http:operation location="/UDPPwd" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGN">
+      <http:operation location="/UDPSIGN" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UDPSIGNEX">
+      <http:operation location="/UDPSIGNEX" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS">
+      <http:operation location="/RECSMS" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx">
+      <http:operation location="/RECSMSEx" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMS_UTF8">
+      <http:operation location="/RECSMS_UTF8" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RECSMSEx_UTF8">
+      <http:operation location="/RECSMSEx_UTF8" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <http:operation location="/Register" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlag">
+      <http:operation location="/GetFlag" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SMSTest">
+      <http:operation location="/SMSTest" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TestCode">
+      <http:operation location="/TestCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo">
+      <http:operation location="/GetAllInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllInfo2">
+      <http:operation location="/GetAllInfo2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SetGaoDuan">
+      <http:operation location="/SetGaoDuan" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGaoDuan">
+      <http:operation location="/GetGaoDuan" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mt">
+      <http:operation location="/mt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend">
+      <http:operation location="/mdSmsSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_u">
+      <http:operation location="/mdSmsSend_u" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_DES">
+      <http:operation location="/mdSmsSend_DES" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdSmsSend_AES">
+      <http:operation location="/mdSmsSend_AES" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo">
+      <http:operation location="/mo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mo2">
+      <http:operation location="/mo2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report">
+      <http:operation location="/report" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2">
+      <http:operation location="/report2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="report2DES">
+      <http:operation location="/report2DES" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="msgid">
+      <http:operation location="/msgid" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="balance">
+      <http:operation location="/balance" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="gxmt">
+      <http:operation location="/gxmt" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fileMT">
+      <http:operation location="/fileMT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mmsFileMT">
+      <http:operation location="/mmsFileMT" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSend">
+      <http:operation location="/mdMmsSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsSendF">
+      <http:operation location="/mdMmsSendF" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdAudioSend">
+      <http:operation location="/mdAudioSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdFaxSend">
+      <http:operation location="/mdFaxSend" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="mdMmsReceive">
+      <http:operation location="/mdMmsReceive" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService">
+    <wsdl:port name="WebServiceSoap" binding="tns:WebServiceSoap">
+      <soap:address location="http://sdk105.entinfo.cn/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceSoap12" binding="tns:WebServiceSoap12">
+      <soap12:address location="http://sdk105.entinfo.cn/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpGet" binding="tns:WebServiceHttpGet">
+      <http:address location="http://sdk105.entinfo.cn/webservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebServiceHttpPost" binding="tns:WebServiceHttpPost">
+      <http:address location="http://sdk105.entinfo.cn/webservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
